@@ -24,7 +24,7 @@ public class Loader {
         try {
             return new Gson().fromJson(
                     new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\content.json"),
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\content.json"),
                     Map.class);
         } catch (IOException e) {
             return null;
@@ -36,7 +36,7 @@ public class Loader {
     public static List<String> loadList(String string) {
         try {
             return new Gson().fromJson(new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\" + string + ".json"),
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\" + string + ".json"),
                     List.class);
         } catch (IOException e) {
             return null;
@@ -49,7 +49,7 @@ public class Loader {
     public static Map<String, List<String>> loadDictionary(String dictionary) {
         try {
             return new Gson().fromJson(new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\" + dictionary + ".json"),
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\" + dictionary + ".json"),
                     Map.class);
         } catch (IOException e) {
             return null;
@@ -61,7 +61,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\weapons\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\weapons\\"
                             + element + ".json");
             Weapon weapon = new Gson().fromJson(reader, Weapon.class);
             return weapon;
@@ -78,7 +78,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\enemies\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\enemies\\"
                             + element + ".json");
             Enemy enemy = new Gson().fromJson(reader, Enemy.class);
             return enemy;
@@ -95,7 +95,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\"
                             + element + ".json");
             TextPuzzle textPuzzle = new Gson().fromJson(reader, TextPuzzle.class);
             return textPuzzle;
@@ -112,38 +112,38 @@ public class Loader {
     public static JugPuzzle loadJugPuzzle(String element) {
             try {
                 JugPuzzle jugPuzzle = new Gson().fromJson(new FileReader(
-                        "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                        "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                 + element + "\\" + element + ".json"),
                         JugPuzzle.class);
                         Jug jug1 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\jug1.json"),
                             Jug.class);
         
                     Jug jug2 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\jug2.json"),
                             Jug.class);
         
                     Jug jug3 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\jug3.json"),
                             Jug.class);
         
                     jugPuzzle.setPlayerJugSet(new JugSet(jug1, jug2, jug3));
         
                     Jug correctJug1 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\correctJug1.json"),
                             Jug.class);
         
                     Jug correctJug2 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\correctJug2.json"),
                             Jug.class);
         
                     Jug correctJug3 = new Gson().fromJson(new FileReader(
-                            "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
                                     + element + "\\correctJug3.json"),
                             Jug.class);
         
@@ -167,7 +167,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\dangers\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\dangers\\"
                             + element + ".json");
             Danger danger = new Gson().fromJson(reader, Danger.class);
             return danger;
@@ -185,7 +185,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\visual puzzles\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\visual puzzles\\"
                             + element + ".json");
             VisualPuzzle visualPuzzle = new Gson().fromJson(reader, VisualPuzzle.class);
             return visualPuzzle;
@@ -203,7 +203,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\pacific encounters\\"
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\pacific encounters\\"
                             + element + ".json");
             PacificEncounter pacificEncounter = new Gson().fromJson(reader, PacificEncounter.class);
             return pacificEncounter;
@@ -220,7 +220,7 @@ public class Loader {
 
         try {
             FileReader reader = new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\items\\" + element
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\items\\" + element
                             + ".json");
             Item item = new Gson().fromJson(reader, Item.class);
             return item;

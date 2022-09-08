@@ -1,17 +1,29 @@
 package com.mapproject;
 
-/**
- * Hello world!
- */
+import com.mapproject.operations.RunHandler;
+import com.mapproject.resources.Session;
+
 public final class App {
-    private App() {
+
+    private Session newSession;
+
+    public App() {
+        this.newSession = new Session();
     }
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+    public void start() {
+        RunHandler gameHandler = new RunHandler(newSession);
+        gameHandler.runGame(newSession);
+
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        System.out.println("\t\tThe Trial\n");
+        System.out.println("\tA game by Gianmarco Rutigliano\n");
+
+         App app = new App();
+         app.start();
+
     }
 }

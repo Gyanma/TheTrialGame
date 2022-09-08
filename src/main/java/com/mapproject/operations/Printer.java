@@ -11,7 +11,7 @@ public class Printer {
 
         try {
             inputStream = new BufferedReader(new FileReader(
-                    "forthelightgame\\src\\main\\java\\com\\mapproject\\resources\\archive\\" + source + ".txt"));
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\" + source + ".txt"));
             String l;
             while ((l = inputStream.readLine()) != null) {
                 System.out.println(l);
