@@ -1,9 +1,8 @@
 package com.mapproject.operations.actions;
 
-import com.mapproject.enums.Status;
-import com.mapproject.operations.InventoryHandler;
-import com.mapproject.operations.Loader;
-import com.mapproject.operations.Printer;
+import com.mapproject.operations.inputoutput.Printer;
+import com.mapproject.operations.runHandler.Loader;
+import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.JugPuzzle;
 import com.mapproject.resources.events.PacificEncounter;

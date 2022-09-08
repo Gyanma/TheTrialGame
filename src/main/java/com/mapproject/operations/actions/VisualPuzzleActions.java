@@ -1,6 +1,6 @@
 package com.mapproject.operations.actions;
 
-import com.mapproject.operations.Printer;
+import com.mapproject.operations.inputoutput.Printer;
 import com.mapproject.operations.visualHandler.VisualHandler;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.VisualPuzzle;
@@ -15,7 +15,7 @@ public class VisualPuzzleActions {
                 gameSession.getCurrentRoom().setEvent(null);
                 System.out
                         .println(
-                                "Senti i meccanismi che si attivano dietro i muri. Adesso le porte si possono aprire");
+                                "Senti i meccanismi che si attivano dietro i muri. Adesso le porte si possono aprire!");
             } else if (result == 0) {
                 System.out.println("Questo enigma è davvero ostico... bisogna pensarci meglio.");
             }

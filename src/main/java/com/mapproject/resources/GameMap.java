@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.mapproject.operations.MapBuilder;
+import com.mapproject.operations.runHandler.MapBuilder;
 
 /*
  *  GameMap class

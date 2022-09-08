@@ -2,9 +2,9 @@ package com.mapproject.operations.visualHandler;
 
 import java.util.concurrent.BlockingQueue;
 
-import com.mapproject.operations.jframes.Puzzle33333;
-import com.mapproject.operations.jframes.PuzzleCombCrip;
-import com.mapproject.operations.jframes.PuzzleZeri;
+import com.mapproject.operations.visualHandler.jframes.Puzzle33333;
+import com.mapproject.operations.visualHandler.jframes.PuzzleCombCrip;
+import com.mapproject.operations.visualHandler.jframes.PuzzleZeri;
 
 public class VisualProducer implements Runnable {
     protected BlockingQueue<Integer> queue = null;

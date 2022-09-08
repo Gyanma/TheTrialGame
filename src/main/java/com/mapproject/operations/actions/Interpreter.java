@@ -1,13 +1,7 @@
 package com.mapproject.operations.actions;
 
-/*
- * The interpreter class receives a command and if the structure of the command
- * is appropriate, it launches the action associated with the command.
- * 
- */
-import com.mapproject.enums.Status;
-import com.mapproject.operations.InventoryHandler;
-import com.mapproject.operations.Utilities;
+import com.mapproject.operations.utilities.Utilities;
+import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.Danger;
 import com.mapproject.resources.events.Enemy;

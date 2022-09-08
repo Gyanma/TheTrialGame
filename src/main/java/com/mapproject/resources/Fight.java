@@ -3,7 +3,7 @@ package com.mapproject.resources;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.mapproject.operations.Loader;
+import com.mapproject.operations.runHandler.Loader;
 import com.mapproject.resources.events.Enemy;
 import com.mapproject.resources.items.Item;
 import com.mapproject.resources.items.Weapon;

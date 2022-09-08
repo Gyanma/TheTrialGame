@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.mapproject.resources.items.Item;
-import com.mapproject.enums.Status;
-import com.mapproject.operations.Loader;
-import com.mapproject.operations.jframes.VisualMap;
+import com.mapproject.operations.runHandler.Loader;
+import com.mapproject.operations.utilities.enums.Status;
+import com.mapproject.operations.visualHandler.jframes.VisualMap;
 
 public class Session {
 

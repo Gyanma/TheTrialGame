@@ -1,6 +1,6 @@
 package com.mapproject;
 
-import com.mapproject.operations.RunHandler;
+import com.mapproject.operations.runHandler.RunHandler;
 import com.mapproject.resources.Session;
 
 public final class App {

@@ -1,6 +1,6 @@
 package com.mapproject.operations.actions;
 
-import com.mapproject.enums.Status;
+import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Fight;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.Enemy;
