@@ -1,0 +1,11 @@
+{
+    "id": 1015,
+    "name": "Bomba fumogena",
+    "nameWithDetArticle": "la bomba fumogena",
+    "nameWithIndetArticle": "una bomba fumogena",
+    "description": "Un aggeggio trovato nel labirinto. Questo marchingegno rilascia una cortina di fumo che ti permette di fuggire senza essere visto.",
+    "findable": true,
+    "throwable": true,
+    "used": false,
+    "manualDescription": "Usandola il nemico con cui stai combattendo, potrai uscire dal combattimento e il nemico fuggir\u00e0. Non funziona con i boss."
+}

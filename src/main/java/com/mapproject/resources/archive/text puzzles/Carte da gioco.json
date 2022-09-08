@@ -1,0 +1,13 @@
+{
+    "rewardId": 1023,
+    "eventId": 2201,
+    "question": "Il goblin si aggiusta il monocolo e comincia a spiegare le regole._\"Come pu\u00f2 vedere ho posizionato cinque carte da gioco coperte di fronte a me. _Se vossignoria ha cuore di credermi, le posso garantire che sono 4 Assi di semi diversi: Cuori, Quadri, Fiori, Picche, e un Jolly._Ora, se usando le quattro regole che vedete accanto a voi riuscirete a indovinare _quale carta sta dove, avrete vinto il premio segreto!_Vi baster\u00e0 dirmele in ordine, da sinistra a destra.\"_Dai un'occhiata alle regole, che recitano:_1. I fiori sono immediatamente a destra dei cuori._2. Le picche non sono vicine al jolly o ai quadri._3. I fiori non sono vicini ai quadri o al jolly._4. I cuori non sono vicini ai quadri o alle picche. Qual è la sequenza?",
+    "tryAgainReply": "\"La sua risposta è.... ERRATA! Ma non si preoccupi, può sempre riprovare!\"",
+    "correctReply": "Il goblin salta sul tavolo, costringedoti a indietreggiare_\"Ben fatto! A voi il vostro premio!\"_Il goblin ti porge una fiala a forma di saetta con un liquido semitrasparente dentro._Rialzi lo sguardo e sia il goblin sia il carretto sono spariti...",
+    "presentation": "Nell'angolo della stanza noti un'ombra che si agita. Ti avvicini e vedi un goblin dietro a un carretto._Appena il goblin ti nota, inizia a urlare: \"Venghino, signori, venghino. Tutti possono giocare,_ ma solo i pi\u00f9 furbi possono vincere.\"",
+    "answer": "Quadri, Jolly, Cuori, Fiori, Picche",
+    "incorrectReply": "",
+    "name": "Goblin",
+    "surrenderReply": "\"Vuole arrendersi? Davvero?_Che peccato. Sar\u00e0 per un'altra volta\"_Il goblin fa un gesto con la mano e in un'istante sia lui che il carretto non si vedono pi\u00f9",
+    "isSkippable": true
+}

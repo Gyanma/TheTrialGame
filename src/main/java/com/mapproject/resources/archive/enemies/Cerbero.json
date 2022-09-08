@@ -1,0 +1,33 @@
+{
+    "presentation": "Al centro della stanza vedi una bestia gigantesca!_Cerbero, il leggendario cane a tre teste, ti si para davanti.L'ultima battaglia del tuo viaggio sta per avere inizio!",
+    "eventId": 2453,
+    "baseAttack": 1.2,
+    "attacks": {
+        "Ruggito Minaccioso": {
+            "damage": 0,
+            "accuracy": 100,
+            "specialEffect": 9
+        },
+        "Morso Feroce": {
+            "damage": 40,
+            "accuracy": 100,
+            "specialEffect": 0
+        },
+        "Palla di fuoco": {
+            "damage": 60,
+            "accuracy": 60,
+            "specialEffect": 3
+        },
+        "Sensi acuti": {
+            "damage": 0,
+            "accuracy": 100,
+            "specialEffect": 10
+        }
+    },
+    "healthPoints": 150,
+    "manualDescription": "Cerbero:Non \u00e8 in grado di volarePunti salute: 10Attacchi:Morso Feroce: danno alto, nessun effetto speciale;Ruggito Minaccioso: nessun danno, ma riduce il prossimo danno dell'avversario;Palla di fuoco: danno molto alto, precisione ridotta, probabilit\u00e0 di infliggere bruciatura;Sensi acuti: nessun danno, salta il prossimo turno, e l'attacco successivo colpir\u00e0 sicuramente;",
+    "name": "Cerbero",
+    "isSkippable": true,
+    "isFlying": false,
+    "baseDefense": 1.2
+}

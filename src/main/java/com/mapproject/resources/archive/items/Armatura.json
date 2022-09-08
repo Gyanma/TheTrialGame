@@ -1,0 +1,11 @@
+{
+    "id": 1016,
+    "name": "Armatura",
+    "nameWithDetArticle": "l'armatura",
+    "nameWithIndetArticle": "un'armatura",
+    "description": "Un\u0027armatura trovata nel labirinto. Una prova pericolosa necessita di una protezione adeguata.",
+    "findable": true,
+    "throwable": true,
+    "used": false,
+    "manualDescription": "Una volta indossata, i danni che subisci vengono ridotti. Regge al massimo 10 colpi."
+}

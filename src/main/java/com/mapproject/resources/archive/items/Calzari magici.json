@@ -1,0 +1,11 @@
+{
+    "id": 1010,
+    "name": "Calzari magici",
+    "nameWithDetArticle": "i calzari magici",
+    "nameWithIndetArticle": "dei calzari magici",
+    "description": "Un paio di calzari incantati trovato nel labirinto. Una volta indossati, senti i piedi leggeri e una gran forza nelle gambe.",
+    "findable": true,
+    "throwable": true,
+    "used": false,
+    "manualDescription": "Una volta indossati la tua agilit\u00e0 aumenta leggermente per tutta la prova."
+}

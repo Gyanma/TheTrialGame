@@ -1,0 +1,23 @@
+{
+    "presentation": "Oh no! Al centro della stanza c'\u00e8 un draghetto!_Sembra molto aggressivo, fai attenzione!",
+    "eventId": 2402,
+    "baseAttack": 1,
+    "attacks": {
+        "Graffio": {
+            "damage": 10,
+            "accuracy": 100,
+            "specialEffect": 0
+        },
+        "Fiammata": {
+            "damage": 20,
+            "accuracy": 70,
+            "specialEffect": 3
+        }
+    },
+    "healthPoints": 50,
+    "manualDescription": "Draghetto:\u00e8 in grado di volarePunti salute: 50Attacchi:Graffio: danno lieve, nessun effetto speciale;Fiammata: danno medio, pu\u00f2 infliggere bruciatura, precisione ridotta;",
+    "name": "Draghetto",
+    "isSkippable": false,
+    "isFlying": true,
+    "baseDefense": 1
+}

@@ -1,0 +1,13 @@
+{
+    "eventId": 2206,
+    "question": "Mentre ti avvicini, il grifone ti nota, e inizia a parlarti._\"Nobile viaggiatore, ho bisogno di aiuto. Mi trovo in una situazione surreale._Io e il mio branco ci stiamo preparando per una grande spedizione._A me \u00e8 stato affidato il compito di preparare le provviste, ma non capisco quante ce ne serviranno!_La nostra destinazione \u00e8 la Torre d'Avorio, e per arrivarci partiremo dalla_Torre di Giada, passando per la Torre d'Ambra e per la Torre di Rubini._Per raggiungere la Torre d'Ambra dalla Torre di Giada sono necessari tre giorni._Per raggiungere la Torre di Rubini dalla Torre d'Ambra \u00e8 necessario un giorno._Per raggiungere la Torre d'Avorio dalla Torre di Rubini sono necessari due giorni._Per\u00f2 quando ho proposto che servissero provviste per sei giorni_il capobranco mi ha risposto che sono esagerate!_Cosa intendeva dire? Per quanti giorni dovremo viaggiare?\"",
+    "tryAgainReply": "\"No, non \u00e8 possibile, ho gi\u00e0 provato a proporre anche quel numero...\"",
+    "correctReply": "\"Ma certo, le provviste bastano per quattro giorni!_Devo assolutamente prepararmi. Grazie dell'aiuto, straniero._Non ho molto da offrirti, ma posso donarti questo in segno di riconoscenza.\"_La creatura afferra un monocolo e te lo porge._Una volta che lo afferri, il grifone ti saluta e spicca il volo.",
+    "presentation": "Nell'angolo della stanza vedi un maestoso grifone._Sembra molto affaccendato per qualche motivo.",
+    "rewardId": 1009,
+    "answer": "4",
+    "incorrectReply": "",
+    "name": "Grifone",
+    "surrenderReply": "\"Perdonami, ti ho solo sottratto del tempo prezioso._Ti ringrazio ugualmente\"_Lasci il grifone a rimuginare sul suo problema.",
+    "isSkippable": true
+}

@@ -1,0 +1,17 @@
+{
+    "presentation": "Ti dirigi verso il centro della stanzaquando all'improvviso un muro di fiamme ti avvolge!La stanza era una trappola! Presto, pensa a un modo per spegnere l'incendio",
+    "timeLimit": 75000,
+    "eventId": 2101,
+    "name": "Incendio",
+    "countdown": {
+        "1": "Le fiamme si continuano ad alzare.",
+        "2": "Un pilastro comincia a vacillare!",
+        "3": "Il pilastro crolla, e per un pelo riesci a schivarlo.",
+        "4": "Il calore diventa insostenibile...",
+        "5": "Non c'\u00e8 via di scampo... Intossicato dal fumo, svieni..."
+    },
+    "solutionId": 1003,
+    "solved": "Con l'acqua sei riuscito a spegnere l'incendio prima di affumicarti del tutto.",
+    "isSkippable": false,
+    "prizeId": 1016
+}

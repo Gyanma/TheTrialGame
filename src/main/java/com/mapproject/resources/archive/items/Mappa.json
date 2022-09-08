@@ -1,0 +1,11 @@
+{
+    "id": 1000,
+    "name": "Mappa",
+    "nameWithDetArticle": "la mappa",
+    "nameWithIndetArticle": "una mappa",
+    "description": "La mappa con cui hai cominciato la tua avventura. Avere un\u0027idea delle stanze che puoi raggiungere aiuta.",
+    "findable": false,
+    "throwable": false,
+    "used": false,
+    "manualDescription": "Usala per vedere tutte le stanze raggiungibili e la stanza di partenza."
+}

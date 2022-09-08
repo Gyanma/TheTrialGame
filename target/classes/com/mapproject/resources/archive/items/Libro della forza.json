@@ -1,0 +1,11 @@
+{
+    "id": 1011,
+    "name": "Libro della forza",
+    "nameWithDetArticle": "il libro della forza",
+    "nameWithIndetArticle": "un libro della forza",
+    "description": "Un antico volume trovato nel labirinto. Contiene benedizioni molto potenti, ma di breve durata.",
+    "findable": true,
+    "throwable": true,
+    "used": false,
+    "manualDescription": "Una volta utilizzato, la tua forza d\u0027attacco aumenter\u00e0 di molto fino alla fine del prossimo combattimento."
+}

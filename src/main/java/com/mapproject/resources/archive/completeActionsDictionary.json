@@ -1,0 +1,90 @@
+{
+    "Esplora stanza": [
+        "Esplora la stanza",
+        "Perlustra la stanza",
+        "Ispeziona la stanza",
+        "Osserva la stanza",
+        "Esamina la stanza",
+        "esplora la stanza",
+        "perlustra la stanza",
+        "ispeziona la stanza",
+        "osserva la stanza",
+        "esamina la stanza"
+    ],
+    "Cerca item": [
+        "Cerca degli item",
+        "Cerca gli item",
+        "Cerca degli oggetti",
+        "Cerca gli oggetti",
+        "Cerca degli item nella stanza",
+        "Cerca gli item nella stanza",
+        "Cerca degli oggetti nella stanza",
+        "Cerca gli oggetti nella stanza",
+        "cerca degli item",
+        "cerca gli item",
+        "cerca degli oggetti",
+        "cerca gli oggetti",
+        "cerca degli item nella stanza",
+        "cerca gli item nella stanza",
+        "cerca degli oggetti nella stanza",
+        "cerca gli oggetti nella stanza "
+    ],
+    "Apri mappa": [
+        "Usa la mappa",
+        "Apri la mappa",
+        "Guarda la mappa",
+        "usa la mappa",
+        "apri la mappa",
+        "guarda la mappa"
+    ],
+    "Raggiungi meccanismo": [
+        "Sblocca il meccanismo",
+        "Esamina il meccanismo",
+        "sblocca il meccanismo",
+        "esamina il meccanismo"
+    ],
+    "Esci": [
+        "Esci",
+        "Raggiungi l'uscita",
+        "Esci dal labirinto",
+        "Raggiungi la prossima mappa",
+        "esci",
+        "raggiungi l'uscita",
+        "esci dal labirinto",
+        "raggiungi la prossima mappa"
+    ],
+    "Apri inventario": [
+        "Apri l'inventario",
+        "Guarda l'inventario",
+        "apri l'inventario",
+        "guarda l'inventario"
+    ],
+    "Prega": [
+        "Prega",
+        "Prega il Dio Sole",
+        "Prega il dio Sole",
+        "Prega alla fontana",
+        "prega",
+        "prega il Dio Sole",
+        "prega il dio Sole",
+        "prega alla fontana"
+    ],
+    "Abbandona": [
+        "Abbandona",
+        "Fuggi",
+        "Scappa",
+        "Allontanati",
+        "Vattene",
+        "abbandona",
+        "fuggi",
+        "scappa",
+        "allontanati",
+        "vattene"
+    ],
+    "Chiudi il gioco": [
+        "Chiudi il gioco",
+        "Chiudi il programma",
+        "chiudi il gioco",
+        "chiudi il programma"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": 1029,
+    "name": "Sacca di diamanti",
+    "nameWithDetArticle": "la sacca di diamanti",
+    "nameWithIndetArticle": "una sacca di diamanti",
+    "description": "Una sacca di diamanti ottenuta nel labirinto. Oggetti preziosi e da un grande valore.",
+    "findable": true,
+    "throwable": true,
+    "used": false
+}

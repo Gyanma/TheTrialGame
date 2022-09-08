@@ -1,0 +1,17 @@
+{
+    "presentation": "Nell'angolo della stanza vedi una strana libreria..._Sembra ben curata e molto rifornita.",
+    "eventId": 2501,
+    "itemNotGivenResponse": "\"Oh, che peccato...\"_In un attimo, la figura sparisce con gli scaffali...",
+    "name": "Biblioteca",
+    "description": "Ti avvicini alla libreria._Quando sei abbastanza vicino, una figura spettrale appare e inizia a parlarti._\"Benvenuto, viaggiatore. Anche tu ti stai cimentando nel labirinto._Anch'io quando ero ancora in vita l'ho esplorato da cima a fondo..._Sono riuscito a descrivere tutto ci\u00f2 che ho trovato nella mia esplorazione._Ora voglio solo collezionare pietre preziose, come diamanti o perle._Se ne hai, posso darti una copia del mio bestiario o del mio libro mastro!_Il bestiario descrive tutti i mostri che ho trovato._Invece il libro mastro descrive tutti gli oggetti che ho trovato._Cosa ne pensi? Ti interessa?\"",
+    "giftedItemId": [
+        1026,
+        1027
+    ],
+    "isSkippable": true,
+    "requestedItemId": [
+        1029,
+        1020
+    ],
+    "itemGivenResponse": "\"Perfetto, ecco a te.\"_La figura ti porge il libro, e una volta ricevuta la sua ricompensa, svanisce con i suoi libri..."
+}

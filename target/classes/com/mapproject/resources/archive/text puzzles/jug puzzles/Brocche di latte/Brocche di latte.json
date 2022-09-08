@@ -1,0 +1,14 @@
+{
+    "eventId": 2212,
+    "question": "Una volta avvicinato al tavolo, il vecchio ti chiama._\"Bentornato giovane. Ti va di giocare?_Le regole le conosci. Adesso la prima brocca, da 10 decilitri, \u00e8 piena,_mentre la seconda e la terza, da 7 e 3 decilitri, sono vuote._Devi versare il latte tra le brocche in modo che_le brocche da 10 e 7 decilitri abbiano entrambe 5 decilitri di latte._Naturalmente, puoi solo versare il latte da una_brocca a un'altra finché la seconda non è piena._Non provare a improvvisare una misura._Accetti?\"",
+    "isSingleAnswer": true,
+    "tryAgainReply": "",
+    "correctReply": "\"Ben fatto ragazzo_A te il tuo premio.\"_Il vecchio ti consegna un tozzo di pane, e rimette il latte nella brocca iniziale._Saluti il vecchio e ti allontani.",
+    "presentation": "Nell'angolo della stanza trovi un vecchio seduto a un tavolo._Ha tre brocche di fronte a s\u00e8. Non sai perch\u00e8, ma_hai come la sensazione di averlo gi\u00e0 visto...",
+    "rewardId": 1002,
+    "answer": "",
+    "incorrectReply": "",
+    "name": "Vecchio",
+    "surrenderReply": "\"Nessun problema. A presto, ragazzo.\"_Saluti il vecchio e ti allontani.",
+    "isSkippable": true
+}

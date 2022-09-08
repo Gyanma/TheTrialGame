@@ -1,0 +1,14 @@
+{
+    "damage": 30,
+    "manualDescription": "Un'arma a distanza. Peso alto, danno alto e precisione bassa.",
+    "findable": true,
+    "throwable": true,
+    "usage": 1,
+    "name": "Lancia",
+    "nameWithDetArticle": "la lancia",
+    "nameWithIndetArticle": "una lancia",
+    "description": "Una lancia trovata nel labirinto. Capace di infliggere grossi danni da una grande gittata.",
+    "accuracy": 60,
+    "agility": 30,
+    "id": 1105
+}

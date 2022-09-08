@@ -1,0 +1,17 @@
+{
+    "presentation": "Ti dirigi verso il centro della stanzaquando all'improvviso ti ritrovi completamente al buio!Nell'oscurit\u00e0 senti delle voci poco rassicuranti...Fai in fretta, devi trovare il modo di illuminare la stanza!",
+    "timeLimit": 75000,
+    "eventId": 2103,
+    "name": "Spettri",
+    "countdown": {
+        "1": "Ora ci si mettono anche gli spifferi...",
+        "2": "Qualcuno ti ha sussurrato nell'orecchio! Ti volti di scatto ma non vedi ancora nulla.",
+        "3": "Una mano gelida ti tocca la spalla! Ti allontani, ma alla cieca non puoi fare molto...",
+        "4": "Le voci diventano sempre di pi\u00f9, e sempre pi\u00f9 assillanti!",
+        "5": "Vieni afferrato da qualcosa, e in men che non si dica, perdi i sensi..."
+    },
+    "solutionId": 1006,
+    "solved": "Appena accesa la torcia, la stanza è di nuovo visibile. Qualsiasi cosa ci fosse, ora non c'è più.",
+    "isSkippable": false,
+    "prizeId": 1017
+}

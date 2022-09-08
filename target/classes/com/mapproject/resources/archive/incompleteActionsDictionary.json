@@ -1,0 +1,86 @@
+{
+    "Raccogli": [
+        "Raccogli",
+        "Prendi",
+        "raccogli",
+        "prendi"
+    ],
+    "Spostati": [
+        "Spostati verso la stanza a",
+        "Spostati a",
+        "Spostati verso",
+        "Muoviti verso la stanza a",
+        "Muoviti a",
+        "Muoviti verso",
+        "Cammina verso la stanza a",
+        "Cammina a",
+        "Cammina verso",
+        "spostati verso la stanza a",
+        "spostati a",
+        "spostati verso",
+        "muoviti verso la stanza a",
+        "muoviti a",
+        "muoviti verso",
+        "cammina verso la stanza a",
+        "cammina a",
+        "cammina verso"
+    ],
+    "Raggiungi": [
+        "Parla con",
+        "Interagisci con",
+        "Raggiungi",
+        "parla con",
+        "interagisci con",
+        "raggiungi"
+    ],
+    "Usa": [
+        "Usa",
+        "Utilizza",
+        "Attiva",
+        "Lancia",
+        "usa",
+        "utilizza",
+        "attiva",
+        "lancia"
+    ],
+    "Cerca": [
+        "Cerca",
+        "cerca"
+    ],
+    "Esamina": [
+        "Esamina",
+        "Osserva",
+        "Ispeziona",
+        "Studia",
+        "esamina",
+        "osserva",
+        "ispeziona",
+        "studia"
+    ],
+    "Getta": [
+        "Getta",
+        "Butta",
+        "Butta via",
+        "Sbarazzati",
+        "getta",
+        "butta",
+        "butta via",
+        "sbarazzati"
+    ],
+    "Consegna": [
+        "Dai",
+        "Consegna",
+        "Offri",
+        "dai",
+        "consegna",
+        "offri"
+    ],
+    "Svuota": [
+        "Svuota",
+        "svuota"
+    ],
+    "Attacca": [
+        "Attacca",
+        "attacca"
+    ]
+}

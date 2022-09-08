@@ -1,0 +1,14 @@
+{
+    "damage": 20,
+    "manualDescription": "Un'arma corpo a corpo. Peso medio, danno medio e precisione media.",
+    "findable": true,
+    "throwable": true,
+    "usage": 2,
+    "name": "Spada",
+    "nameWithDetArticle": "la spada",
+    "nameWithIndetArticle": "una spada",
+    "description": "Una spada trovata nel labirinto. Un'arma bilanciata per ogni tipo di combattente.",
+    "accuracy": 75,
+    "agility": 40,
+    "id": 1101
+}

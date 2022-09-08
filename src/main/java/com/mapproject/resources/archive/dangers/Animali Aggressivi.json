@@ -1,0 +1,17 @@
+{
+    "presentation": "Ti dirigi verso il centro della stanzama tutto intorno a te vedi un branco di bestie selvagge!Provi a colpirle ma non sembra avere effetto! Devi distrarle, e alla svelta!",
+    "timeLimit": 75000,
+    "eventId": 2104,
+    "name": "Animali Aggressivi",
+    "countdown": {
+        "1": "Perlomeno con le armi riesci a tenerli a bada...",
+        "2": "Ogni tentativo di raggiungere un'altra stanza \u00e8 subito intercettato!",
+        "3": "Ora sembra che stiano comunicando tra loro...",
+        "4": "Ti hanno circondato! Stanno per sferrare l'attacco finale!",
+        "5": "Il branco ti attacca da ogni parte. Riesci a proteggerti il fronte, ma vieni colpito alla schiena.Per il dolore perdi i sensi..."
+    },
+    "solutionId": 1002,
+    "isSkippable": false,
+    "solved": "Il cibo sembra averli distratti. Ora puoi stare tranquillo.",
+    "prizeId": 1008
+}

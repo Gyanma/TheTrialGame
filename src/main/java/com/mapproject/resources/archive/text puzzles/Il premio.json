@@ -1,0 +1,13 @@
+{
+    "eventId": 2207,
+    "question": "Ti avvicini al soldato e gli domandi cosa lo affligga._\"Oh, salve. Sto cercando di contare quanto dovr\u00f2 ricevere in premio_per una ronda di qualche giorno fa._Mi stavo dirigendo dalla caserma verso il municipio._Ho percorso 500 metri quando ho sentito dietro di me un grido._Un commerciante stava venendo derubato!_Sono corso indietro a soccorrerlo, e alla mia sola vista il ladro \u00e8 fuggito._Dopodich\u00e8, sono tornato sui miei passi e ho raggiunto il municipio._Da l\u00ec, svolte le mie mansioni, sono tornato alla caserma._Tutta la ronda si \u00e8 svolta sulla strada principale del paese,_e so che il municipio dista 800 metri dal municipio._Il premio consiste in una moneta d'oro per ogni 100 metri che ho percorso._Quante monete mi spettano?\"",
+    "tryAgainReply": "\"Ne siete sicuro? Non mi convince...\"",
+    "correctReply": "\"Oh grazie, grazie infinite\" dice il soldato._\"Prendete questo come segno di riconoscenza\"_Il soldato ti porge una fune._\"Vi potrebbe servire in questo labirinto. A presto, e ancora grazie\"_Il soldato si allontana.",
+    "presentation": "In lontananza vedi un soldato umano, rannicchiato._Sta contando sulle dita e sussurra qualcosa a s\u00e8 stesso.",
+    "rewardId": 1001,
+    "answer": "26",
+    "incorrectReply": "",
+    "name": "Soldato",
+    "surrenderReply": "\"Oh non vi preoccupate, posso risolvere_questo problema da solo, grazie ugualmente\"",
+    "isSkippable": true
+}

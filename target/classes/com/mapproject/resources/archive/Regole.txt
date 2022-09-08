@@ -1,0 +1,29 @@
+"La prova consiste nel superare tre labirinti...."
+
+Ciao.
+Approfitto della spiegazione del maestro per rompere la quarta parete 
+e spiegarti di persona il funzionamento del gioco.
+Il gioco presenta tre labirinti di cui dovrai trovare l'uscita.
+Nei labirinti ci saranno oggetti da raccogliere, mostri da affrontare e indovinelli da risolvere.
+Per effettuare un'azione, dovrai inserire personalmente un comando.
+Ad esempio: "spostati a nord" per cambiare stanza,
+"cerca degli oggetti" per vedere quali oggetti ci sono nella stanza
+o "attacca con l'arco" per attaccare un nemico.
+(o "chiudi il gioco", lascio a te capire a cosa serva)
+Se il gioco non capisce il comando inserito, prova con qualche altra parola (possibilmente non troppo creativa).
+All'inizio della sfida avrai a disposizione una mappa e una pergamena magica.
+La mappa indica la conformazione delle stanze del labirinto dove ti trovi e segnala la stanza iniziale.
+La pergamena tiene nota in ogni momento del tuo status (punti vita, stat utili per la battaglia etc).
+In (quasi) ogni momento potrai aprire il tuo inventario ed esaminare o usare gli oggetti al loro interno.
+Alcuni oggetti potranno essere usati su altri oggetti, o sui nemici.
+In questi casi specifica anche il bersaglio dell'oggetto.
+Gli indovinelli richiedono sempre una risposta univoca.
+In alcuni potresti avere piu' possibilita'. Per altri, o la va o la spacca.
+Non tutti coloro che incontri hanno bisogno della tua arguzia.
+Altri potrebbero essere interessati a fare buoni affari...
+Alcune stanze potrebbero contenere delle trappole.
+Ogni trappola richiede un oggetto specifico. Fai molta attenzione.
+Altre stanze presentano un meccanismo per aprire le porte.
+Finche' non lo risolvi l'indovinello che lo accompagna, non potrai muoverti da li'.
+Penso di aver detto tutto. 
+Buona fortuna e buon divertimento!

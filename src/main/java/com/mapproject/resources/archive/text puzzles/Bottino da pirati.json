@@ -1,0 +1,13 @@
+{
+    "rewardId": 1029,
+    "eventId": 2202,
+    "question": "Ti avvicini per ascoltare meglio cosa i pirati si stanno dicendo._In questo momento sta parlando quello con un'uniforme rossa._\"Fate silenzio! Io sono il capitano, e mi spetta la parte maggiore._Gli accordi erano questi sin dal principio.\"_Risponde un altro pirata con un'uniforme blu._\"Certo, ci andava bene perch\u00e8 avete sempre distribuito equamente il bottino._Questa volta invece, se vi prendeste uno dei miei diamanti, ne avreste addirittura il doppio del quartiermastro\"_Si aggiunge il terzo pirata, vestito con un'uniforme verde._\"Devo dar ragione al carpentiere, capitano. Se gli deste due diamanti, ne avremmo tutti lo stesso numero.\"_Il primo pirata inizia a sbraitare._\"Cosa mi tocca sentire; \u00e8 questo forse un ammutinamento?_Fate parlare le vostre sciabole se ne avete il coraggio!\"_Questi pirati hanno rubato dei diamanti. Bisogna recuperarli!_Per\u00f2 al momento non puoi trasportare pi\u00f9 di 20 diamanti con te._I tre bucanieri sono distratti a combattere, quindi bisogna pensare in fretta._Quanti diamanti sono stati rubati?",
+    "tryAgainReply": "",
+    "correctReply": "Perfetto, 9 diamanti sono stati rubati!_Ti avvicini di soppiatto alle loro sacche e in silenzo le svuoti nella tua._Hai recuperato tutti i diamanti, ma a un tratto senti una voce dietro di te._\"Hey, tu. Cosa fai con il nostro bottino?!\"_Senza perdere un secondo inizi a correre per far perdere le tue tracce._Dopo aver seminato i pirati, torni sui tuoi passi.",
+    "presentation": "Senti un brusio, e man mano che ti avvicini all'angolo della stanza_riconosci la lingua degli umani. Vedi tre umani vestiti con abiti bizzarri._Ricordi dal tuo addestramento che gli umani vestiti in quel modo si dicono \"pirati\". Sembrano discutere animatamente.",
+    "answer": "9",
+    "incorrectReply": "I pirati stanno ancora combattendo tra loro._In silenzio ti avvicini alle loro sacche e provi a recuperare i diamanti._Ma che succede? I pirati hanno rubato 9 diamanti!_La tua intuizione era dunque sbagliata?_Ma non hai tempo di meravigliarti che senti una lama puntata sulla schiena._\"Cosa credevi di fare, canaglia?\"_Al diavolo i diamanti, ora bisogna pensare a salvarsi la pelle.Senza perdere un secondo inizi a correre per far perdere le tue tracce._Dopo aver seminato i pirati, torni sui tuoi passi._ Non hai recuperato i diamanti, ma almeno sei ancora tutto intero.",
+    "name": "Pirati",
+    "surrenderReply": "Quei pirati sembrano minacciosi._Meglio non correre rischi. Continuiamo.",
+    "isSkippable": true
+}

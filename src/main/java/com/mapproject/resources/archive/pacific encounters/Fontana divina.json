@@ -1,0 +1,15 @@
+{
+    "presentation": "Nell'angolo della stanza vedi una fontana. Sembra essere un qualche luogo sacro...",
+    "eventId": 2504,
+    "itemNotGivenResponse": "Abbandoni la fontana e continui per la tua strada...",
+    "name": "Fontana",
+    "description": "Ti avvicini alla fontana._Accanto ad essa trovi un'incisione su una lastra_\"La sacra fontana di Legrejoux fu costruita dai monaci del dio Sole molti secoli fa._Da tempo immemore concede grazie a chi si ferma per pregare il dio Sole.\"",
+    "giftedItemId": [
+        -1
+    ],
+    "isSkippable": true,
+    "requestedItemId": [
+        -1
+    ],
+    "itemGivenResponse": "Rimani in silenzio a pregare... Dopo un po', la fontana si dissolve nell'aria!"
+}

@@ -1,0 +1,13 @@
+{
+    "eventId": 2208,
+    "question": "\"Ehi, tu.\" L'orco ti rivolge la parola appena ti vede._\"Dammi una mano. Ho questi nove mattoni da trasportare._Ce ne sono due pi\u00f9 pesanti degli altri da trasportare per primi._So che sono uno accanto all'altro, ma non ricordo quali siano._L'unico modo per trovarli \u00e8 sollevarli uno alla volta, ma ne voglio sollevare il meno possibile per essere_ sicuro di trovare i mattoni pi\u00f9 pesanti._Tu mi sembri sveglio. Quanti mattoni dovr\u00f2 sollevare?\"",
+    "tryAgainReply": "Spieghi la tua strategia all'orco, ma non sembra capirci molto...",
+    "correctReply": "Spieghi la tua strategia all'orco e lui risponde:_\"Ottimo, mi metto subito al lavoro.\"_Prima di sollevare il primo mattone, l'orco ti porge un pugnale._\"Tieni, l'ho preso a un umano prima, ma \u00e8 troppo piccolo per i miei gusti\"_Lasci l'orco al suo lavoro.",
+    "presentation": "Nell'angolo della stanza vedi un orco che armeggia_con una fila di mattoni.",
+    "rewardId": 1103,
+    "answer": "4",
+    "incorrectReply": "",
+    "name": "Orco",
+    "surrenderReply": "\"Bah, piccolo e anche stupido.\"_L'orco ti guarda male, poi siede di fronte ai suoi mattoni._Nel frattempo torni sui tuoi passi.",
+    "isSkippable": true
+}

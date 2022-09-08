@@ -1,0 +1,14 @@
+{
+    "damage": 10,
+    "manualDescription": "Un'arma corpo a corpo. Danno basso, ma peso basso e precisione alta.",
+    "findable": true,
+    "throwable": true,
+    "usage": 2,
+    "name": "Pugnale",
+    "nameWithDetArticle": "il pugnale",
+    "nameWithIndetArticle": "un pugnale",
+    "description": "Un pugnale trovato nel labirinto. Perfetto per chi preferisce combattere dall'ombra.",
+    "accuracy": 90,
+    "agility": 50,
+    "id": 1103
+}

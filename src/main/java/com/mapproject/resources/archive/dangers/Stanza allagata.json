@@ -1,0 +1,17 @@
+{
+    "presentation": "Ti dirigi verso il centro della stanzaquando all'improvviso il pavimeno si apre sotto di te!Per fortuna non ti fai troppo male. Mentre ti rialzi, senti uno strano rumore.Ti guardi attorno e noti che al lato del fossato si sono aperti due passaggie sta iniziando a uscire un getto d'acqua! Presto, devi uscireda questa trappola!",
+    "timeLimit": 75000,
+    "eventId": 2102,
+    "name": "Stanza allagata",
+    "countdown": {
+        "1": "L'acqua ti arriva gi\u00e0 alle ginocchia.",
+        "2": "Avanti, l'acqua continua a salire!",
+        "3": "L'acqua ti \u00e8 arrivata al petto!",
+        "4": "Ormai l'acqua ti arriva alla gola!",
+        "5": "Troppo tardi, il fossato \u00e8 completamente riempito...Provi a restare a galla il pi\u00f9 possibile, ma svieni per la troppa fatica..."
+    },
+    "solutionId": 1001,
+    "solved": "Con la tua fune riesci a uscire dalla trappola! C'è mancato davvero poco...",
+    "isSkippable": false,
+    "prizeId": 1020
+}

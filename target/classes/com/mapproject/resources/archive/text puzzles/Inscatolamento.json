@@ -1,0 +1,13 @@
+{
+    "eventId": 2209,
+    "question": "Quando approcci l'elfo, lui ti saluta con aria di superiorit\u00e0 \"Oh, salve._Stavo giusto cercando qualcuno con cui lamentarmi di quell'idiota del mio capo._Queste casse misurano 30 cm per ogni dimensione._Posso utilizzare una coppia di casse per trasportare queste scatole_che invece misurano 20x20x10._Anche un bambino vedrebbe che con due casse posso trasportare non pi\u00f9 di 10 scatole_e invece il mio capo dice che \"sono troppo poche\"!_Come se ci fosse un modo per trasportarne di pi\u00f9 che_IO non sono riuscito a trovare. Bah\"_Inizi a riflettere sulle parole dell'elfo... chiss\u00e0 se..._L'elfo interrompe il tuo flusso di pensieri._Cosa ti turba? Pensi forse che abbia ragione lui?_Sentiamo dunque, quante scatole riusciresti a trasportare?\"",
+    "tryAgainReply": "Spieghi la tua idea all'elfo, ma lui ti risponde in malo modo_Oh, che assurdit\u00e0. Sapevo di non podermi affidare a te.",
+    "correctReply": "Spieghi all'elfo come posizionare le scatole e le casse_per trasportarne 12._L'elfo ti risponde:\"Tsk, certo. Lo sapevo anche io._Ora levati di mezzo. C'\u00e8 del lavoro da fare qui.\"_Mentre si allontana, dalla bisaccia dell'elfo casca un otre pieno d'acqua._Decidi di prenderlo, come... ringraziamento, e ti allontani.",
+    "presentation": "C'\u00e8 un elfo che guarda con insistenza due casse vuote...",
+    "rewardId": 1003,
+    "answer": "12",
+    "incorrectReply": "",
+    "name": "Elfo",
+    "surrenderReply": "\"Ecco. Ora spero che ti renda conto che ho ragione. Addio.\"_Ti allontani dall'elfo prima di passare alla violenza.",
+    "isSkippable": true
+}

@@ -1,0 +1,13 @@
+{
+    "eventId": 2211,
+    "question": "Ti avvicini ai nani per chiedere cosa stia succedendo_Uno di loro ti risponde: \"Abbiamo catturato questi sospettati_appartenenti a un gruppo di terroristi che continua a interferire_con il lavoro dei soldati e dei cittadini._Ma il re \u00e8 stato molto preciso: dobbiamo arrestare solo i veri colpevoli._Possiamo immaginare che i membri dell'organizzazione_faranno di tutto per non collaborare con i soldati, quindi_i loro interrogatori saranno pieni di menzogne._Per il momento abbiamo ottenuto queste poche dichiarazioni:_Sospettato n. 1: Quanti impostori... solo uno di noi \u00e8 un vero membro delle Lame Nere._Sospettato n. 2: Tornate a casa, inetti; non riconoscerete mai i due membri delle Lame Nere._Sospettato n. 3: Per quanto mi piacerebbe vedere queste mezze cartucce in gattabuia,avete catturato solo tre membri delle Lame Nere_Sospettato n. 4: Non ascoltate questi farabutti, quattro di noi sono membri delle Lame Nere._Sospettato n. 5: Siamo tutti membri delle Lame Nere, e ne andremo fieri fino alla morte!_Quanti di loro appartengono davvero al gruppo di terroristi?\"",
+    "tryAgainReply": "Il nano non sembra affatto convinto...",
+    "correctReply": "\"Lo credo anch'io. Ma sentire un'altra_opinione non guasta mai. Grazie dell'aiuto.\"_Il nano ti passa un affilatore requisito ai sospettati_\"Questi attrezzi sono decisamente arretrati per noi, ma per le tue armi_dovrebbero andare bene. Buona fortuna\"_Ti allontani con il tuo bottino",
+    "presentation": "Vedi un gruppo di nani che discutono._Ma come? Cinque di loro sono legati? Cosa sta succedendo?",
+    "rewardId": 1018,
+    "answer": "4",
+    "incorrectReply": "",
+    "name": "Nani",
+    "surrenderReply": "\"D'accordo. A presto allora.\"_Ti allontani, mentre il nano raggiunge i suoi compagni ancora impegnati nell'interrogatorio",
+    "isSkippable": true
+}

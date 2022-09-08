@@ -1,0 +1,28 @@
+{
+    "presentation": "Al centro della stanza si erge un'Idra!_Sta proteggendo l'uscita dal labirinto._Sconfiggila per superare la prima prova.",
+    "eventId": 2451,
+    "baseAttack": 1,
+    "attacks": {
+        "Rigenerazione": {
+            "damage": 0,
+            "accuracy": 70,
+            "specialEffect": 7
+        },
+        "Morso": {
+            "damage": 20,
+            "accuracy": 100,
+            "specialEffect": 0
+        },
+        "Soffio acido": {
+            "damage": 30,
+            "accuracy": 80,
+            "specialEffect": 6
+        }
+    },
+    "healthPoints": 100,
+    "manualDescription": "Idra:Non \u00e8 in gradi di volarePunti salute: 100Attacchi:Morso: danno medio, nessun effetto speciale;Soffio acido: danno medio, precisione ridotta, possibilit\u00e0 di diffondere tossine;Rigenerazione: nessun danno, precisione ridotta, rigenera Hp, ma richiede due turni;",
+    "name": "Idra",
+    "isSkippable": true,
+    "isFlying": false,
+    "baseDefense": 1
+}

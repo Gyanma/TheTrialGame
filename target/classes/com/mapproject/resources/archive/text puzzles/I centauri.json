@@ -1,0 +1,13 @@
+{
+    "eventId": 2204,
+    "question": "Una volta avvicinato alle creature, chiedi al padre cosa stia succedendo._\"Uno dei miei figli ha calpestato il raccolto, ma non vuole uscire allo scoperto._Li ho interrogati in ordine di nascita e queste sono le loro risposte.\"_Dopo aver ascoltato il padre, acquisisci queste informazioni._Primogenito: afferma di essere innocente._Secondogenito: afferma che il Primogenito stia dicendo il vero._Terzogenito: afferma che il Quartogenito stia mentendo._Quartogenito: afferma di essere innocente._Una delle risposte ti sembra estremamente strana. Quale?",
+    "tryAgainReply": "Il centauro non sembra prestarti particolare attenzione..._Forse non \u00e8 convinto della tua risposta._",
+    "correctReply": "\"Ma certo. La risposta del mio terzogenito \u00e8 troppo strana_per essere ignorata. Grazie forestiero._Prendi questo dono, in segno di ringraziamento.\"_Il centauro ti passa un set di pitture di guerra e inizia a interrogare il giovane.",
+    "presentation": "Nell'angolo della stanza noti un gruppo di centauri._Ne conti un adulto e quattro giovani, e ascoltando i loro_discorsi sembrano essere un padre e quattro figli.",
+    "rewardId": 1008,
+    "answer": "Terzogenito",
+    "incorrectReply": "",
+    "name": "Centauri",
+    "surrenderReply": "\"Oh certo, non preccuparti._Grazie lo stesso dell'aiuto, forestiero.\"",
+    "isSkippable": true
+}
