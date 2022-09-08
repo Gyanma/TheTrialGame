@@ -231,9 +231,11 @@ Il package "**operations**" contiene classi che non conservano dati, ma presenta
 
 **Directory "archive"**
 
-    Questa directory contiene i dati di gioco predefiniti: dati degli eventi, degli item, dei testi e dei vocabolari.
+    Questa directory contiene i dati di gioco predefiniti: dati degli eventi, degli item, dei testi e dei vocabolari che vengono utilizzati nel gioco.
 
-**Package "
+**Package "events" e "items"**
+
+    Queste directory contengono classi archetipo di dati di gioco.
 
 
 >### Diagramma delle classi
@@ -241,3 +243,7 @@ Il package "**operations**" contiene classi che non conservano dati, ma presenta
 >### Specifica algebrica
 
 >### Elementi implementati
+
+**Programmazione ad oggetti**
+
+    
