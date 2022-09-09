@@ -56,7 +56,7 @@ Gli eventi si dividono in 4 categorie:
 
 > ### Comandi
 Per ogni comando sono previsti una serie di comandi alternativi di significato simile. Di seguito sono elencate le azioni possibili e degli esempi di comandi che le eseguono:
--	Individuare gli eventi
+-	Individuare gli eventi presenti nella stanza
 
         Esplora la stanza
         Perlustra la stanza
@@ -114,7 +114,9 @@ Per ogni comando sono previsti una serie di comandi alternativi di significato s
 -   Scambiare un item con un personaggio
 
         Consegna l'acchiappasogni
-        Offri il pugnale per la pozione del fuoco
+        Offri il pugnale
+
+Nel caso in cui sia necessario dichiarare più di un oggetto (per effettuare uno scambio o se si vuole usare un oggetto su un altro), si prevede che i comandi si organizzino in due parti. In primo luogo si indica l'azione e il primo oggetto (es: usa l'affilatore), e in quel frangente al giocatore viene chiesto di inserire il secondo oggetto (la spada).
 
 Si aggiunge il comando unico "Chiudi il gioco" che permette di chiudere l'applicazione.
 
@@ -219,6 +221,7 @@ Il package "**operations**" contiene classi che non conservano dati, ma presenta
 **Package "inputoutput"**
 
     A questo package sono destinate le classi il cui scopo è gestire input e output da terminale particolarmente complessi. Al momento esse consistono nella classe Parser, che si occupa di analizzare i comandi e verificarne sintassi e vocabolario per verificarne la validità, e la classe Printer che si occupa di formattare gli output su terminale e stampare testi da file.
+    La classe Parser opera verificando se il comando rientra negli archetipi di comando previsti, restituendo un comando "fail" in caso il comando sia sintatticamente scorretto o concettualmente non previsto.
 
 **Package "runHandler"**
 
@@ -245,10 +248,69 @@ Il package "**operations**" contiene classi che non conservano dati, ma presenta
 
 >### Diagramma delle classi
 
+    Diagramma delle classi relativo a un comando di raccolta di un item da una stanza. Il diagramma è rappresentativo in quando ogni comando esegue un ciclo simile, eccezion fatta per la classe ExplorationActions che è specifica dei comandi di questo tipo
+
+
+![Diagramma delle classi](/docs/DiagrammaDelleClassi.png)
+
+    
+
+
+
 >### Specifica algebrica
+
+    Si riportano di seguito le specifiche sintattiche e semantiche del dato astratto Lista, usato, tra gli altri, per conservare un insieme di istanze di Item nella classe Room e nella classe Session.
+
+    > Specifica Sintattica: 
+    Tipi: Lista, Boolean, Posizione, Tipoelem, Int
+
+    Operazioni:
+
+        CreaLista () -> Lista
+        InsLista (Lista, Posizione, Tipoelem) -> Lista
+        CancLista (Lista, Posizione) -> Lista
+        ListaVuota (Lista) -> Boolean
+        ListaContElem (Lista, Tipoelem) -> Boolean
+        DimLista (Lista) -> Int
+
+    > Specifica Semantica:
+    Data la lista List, la posizione p e l'elemento elem
+
+        ListaVuota (CreaLista()) = true
+        ListaVuota (InsLista (List, p, elem)) = false
+        CancLista (InsLista (List, p, elem), p) = List
+        ListaContElem (CreaLista(), elem) = false
+        ListaContElem (InsLista (List, p, elem), elem) = true
+        DimLista (InsLista (List, p, elem)) = DimLista (List) + 1
+        DimLista (CreaLista()) = 0;
+
+    Restrizioni:
+        CancLista (CreaLista(), p) = error
 
 >### Elementi implementati
 
 **Programmazione ad oggetti**
 
-    
+    La programmazione ad oggetti è stata implementata nell'uso delle classi che contengono dati: in particolare le classi della categoria Event (Danger, Enemy, PacificEncounter, TextPuzzle e VisualPuzzle) ereditano tutti dalla classe Evento. In più, nella classe JugPuzzle, che a sua volta eredita da TextPuzzle, sono presenti le classi innestate Jug e JugSet.
+    Infine la classe Weapon eredita dalla classe Item.
+
+**Uso dei File**
+
+    Sebbene l'avventura sia generata casualmente ad ogni avvio, esistono alcuni elementi già predefiniti, ossia Eventi e Item. Le istanze predefinite di questi elementi vengono caricati ogni volta che ce ne sia necessità tramite la classe Loader, e sono salvati in formato JSON.
+    Un trattamento simile è riservato a porzioni testuali inerenti alla storia più che al gameplay.
+
+**Thread**
+
+    I thread hanno tre usi principali all'interno dell'applicazione.
+    1. La stampa di testi particolarmente copiosi viene intervallata tramite l'uso dei thread per migliorarne la leggibilità (classe Printer).
+    2. Nel momento in cui il giocatore sta affrontando un VisualPuzzle, viene implementata una coda per impedire al giocatore di poter inserire altri comandi finché non si è arreso o non ha completato il puzzle (classi VisualHandler, VisualConsumer e VisualProducer). 
+    3. Nel momento in cui il giocatore ha attivato un evento Danger, questo evento può essere concluso dal giocatore se lo riesce a risolvere. Altrimenti, viene implementato un timer che stampa a schermo dei messaggi fino allo scadere del tempo e in caso infligge una penalità al giocatore. Per permettere al giocatore di inserire comandi mentre il timer procede è stato implementato un thread (metodo launchDanger della classe DangerActions).
+
+**Interfaccia grafica**
+
+    L'uso di Java Swing è riservato alla stampa su schermo della mappa (classe VisualMap) e dei VisualPuzzle (classi Puzzle nel package jframes).
+    La mappa è impostata in modo da essere indipendente dall'evoluzione del gioco. Perché una modifica dei dati di gioco (es il passaggio a una mappa successiva o, nel caso della mappa mistica, lo spostamento nelle stanze del giocatore) si rifletta nella mappa, è necessario aprirne una nuova istanza. I VisualPuzzle al contrario prevengono che il giocatore possa proseguire nel gioco mentre la loro interfaccia è aperta (vedasi sezione Thread).
+
+**Espressioni lambda**
+
+    Le espressioni lambda sono state utilizzate in vari punti dell'applicazione all'interno di operazioni effettuate con pipeline. Essendo risultate molto frequenti operazioni di ricerca su Collection di vario genere, per migliorare il codice sono stati applicate delle istruzioni tramite pipeline ove possibile. (Esempi notevoli: classi InventoryHandler e Parser)

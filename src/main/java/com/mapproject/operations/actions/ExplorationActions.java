@@ -31,7 +31,7 @@ public class ExplorationActions {
     protected static void exploreRoomForItems(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             if (gameSession.getCurrentRoom().getItems() != null
-                    && gameSession.getCurrentRoom().getItems().size() > 0) {
+                    && !gameSession.getCurrentRoom().getItems().isEmpty()) {
 
                 gameSession.getCurrentRoom().getItems().forEach(item -> {
                     System.out.println("Nella stanza vedi "

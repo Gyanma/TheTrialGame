@@ -256,7 +256,7 @@ public class MapBuilder {
         int roomId;
         do {
             roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
-        } while (map.getRoom(roomId).getItems().size() != 0);
+        } while (!map.getRoom(roomId).getItems().isEmpty());
         // add the item to the room
         Room tempRoom = map.getRoom(roomId);
         tempRoom.addItem(item);
