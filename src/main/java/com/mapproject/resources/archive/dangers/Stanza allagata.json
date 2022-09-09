@@ -1,5 +1,5 @@
 {
-    "presentation": "Ti dirigi verso il centro della stanzaquando all'improvviso il pavimeno si apre sotto di te!Per fortuna non ti fai troppo male. Mentre ti rialzi, senti uno strano rumore.Ti guardi attorno e noti che al lato del fossato si sono aperti due passaggie sta iniziando a uscire un getto d'acqua! Presto, devi uscireda questa trappola!",
+    "presentation": "Ti dirigi verso il centro della stanza_quando all'improvviso il pavimento si apre sotto di te!_Per fortuna non ti fai troppo male. _Mentre ti rialzi, senti uno strano rumore._Ti guardi attorno e noti che al lato del fossato si sono aperti due passaggi_e sta iniziando a uscire un getto d'acqua! _Presto, devi uscire da questa trappola!",
     "timeLimit": 75000,
     "eventId": 2102,
     "name": "Stanza allagata",

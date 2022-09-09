@@ -1,5 +1,5 @@
 {
-    "presentation": "Ti dirigi verso il centro della stanzaquando all'improvviso un muro di fiamme ti avvolge!La stanza era una trappola! Presto, pensa a un modo per spegnere l'incendio",
+    "presentation": "Ti dirigi verso il centro della stanza_quando all'improvviso un muro di fiamme ti avvolge!_La stanza era una trappola! _Presto, pensa a un modo per spegnere l'incendio",
     "timeLimit": 75000,
     "eventId": 2101,
     "name": "Incendio",

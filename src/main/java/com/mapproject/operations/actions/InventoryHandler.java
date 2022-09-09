@@ -168,12 +168,14 @@ public class InventoryHandler {
                         break;
 
                     case "Acchiappasogni":
-                        for (Integer i : gameSession.getCurrentMap().getVisitableRooms()) {
-                            if (gameSession.getCurrentMap().getRoom(i).getEvent() != null &&
-                                    gameSession.getCurrentMap().getRoom(i).getEvent()
-                                            .getClass() == Enemy.class)
-                                gameSession.getCurrentMap().getRoom(i).getEvent().setSkippable(true);
-                        }
+
+                        gameSession.getCurrentMap().getVisitableRooms().stream()
+                                .filter(room -> gameSession.getCurrentMap().getRoom(room).getEvent() != null &&
+                                        gameSession.getCurrentMap().getRoom(room).getEvent()
+                                                .getClass() == Enemy.class)
+                                .forEach(room -> gameSession.getCurrentMap().getRoom(room).getEvent()
+                                        .setSkippable(true));
+
                         System.out.println("Hai usato " + chosenItem.getNameWithDetArticle() + ".");
                         gameSession.removeItemFromInventory(chosenItem);
                         break;
@@ -212,11 +214,10 @@ public class InventoryHandler {
                                 "La tua accuratezza è al " + gameSession.getAccuracyModifier() * 100 + "%.");
                         if (gameSession.getCurrentStatus() == Status.FIGHTING &&
                                 gameSession.getCurrentFight() != null) {
-                            for (String string : gameSession.getCurrentFight().getPlayerDebuff().keySet()) {
-                                if (gameSession.getCurrentFight().getPlayerDebuff().get(string) == true) {
-                                    System.out.println("Sei sotto effetto dello status: " + string + "!");
-                                }
-                            }
+                            gameSession.getCurrentFight().getPlayerDebuff().keySet().stream()
+                                    .filter(debuff -> gameSession.getCurrentFight().getPlayerDebuff().get(debuff))
+                                    .forEach(debuff -> System.out.println("Sei sotto l'effetto di  " + debuff + "."));
+
                             System.out.println("Il nemico ha " + gameSession.getCurrentFight().getOpponent()
                                     .getHealthPoints() + " punti salute.");
                         }
@@ -352,37 +353,36 @@ public class InventoryHandler {
     }
 
     public static void examineItem(Session gameSession, String command) {
-        boolean found = false;
-        for (Item item : gameSession.getInventory()) {
-            if (command.equals(item.getName())) {
-                System.out.println(item.getName());
-                System.out.println(item.getDescription());
-                found = true;
-            }
-        }
-        if (!found) {
+
+        Item tempItem = gameSession.getInventory().stream().filter(item -> item.getName().equalsIgnoreCase(command))
+                .findFirst().orElse(null);
+
+        if (tempItem == null) {
             System.out.println("Non ho capito di che oggetto parli.");
+        } else {
+            System.out.println(tempItem.getName());
+            System.out.println(tempItem.getDescription());
         }
 
     }
 
     public static void throwItem(Session gameSession, String command) {
-        boolean found = false;
-        for (Item item : gameSession.getInventory()) {
-            if (command.equals(item.getName())) {
 
+        if (gameSession.getInventory().stream().
+        filter(item -> command.equals(item.getName())).
+        findAny().orElse(null) != null)
+
+            gameSession.getInventory().stream().
+            filter(item -> command.equals(item.getName())).
+            forEach(item -> {
                 gameSession.removeItemFromInventory(item);
                 if (!item.isUsed())
                     gameSession.getCurrentRoom().addItem(item);
-
-                System.out.println("Hai gettato via " + item.getNameWithDetArticle());
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
+                System.out.println("Hai gettato " + item.getNameWithDetArticle() + "!");
+            });
+            
+        else
             System.out.println("Non ho capito di che oggetto parli.");
-        }
 
     }
 

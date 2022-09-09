@@ -108,6 +108,7 @@ public class Utilities {
         int randomNumber = (int) (Math.random() * visitableRooms.size() + 1);
         int roomId = 0;
         int i = 1;
+
         for (Integer room : visitableRooms) {
             if (i == randomNumber) {
                 roomId = room;
@@ -119,12 +120,7 @@ public class Utilities {
     }
 
     public static boolean isThereAWeapon(List<Item> inventory) {
-        for (Item item : inventory) {
-            if (item.getClass() == Weapon.class) {
-                return true;
-            }
-        }
-        return false;
+        return inventory.stream().anyMatch(item -> item instanceof Weapon);
     }
 
     public static void placeRandomDebuff(Session gameSession) {

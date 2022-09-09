@@ -26,10 +26,7 @@ public class Enemy extends Event {
         this.baseAttack = baseAttack;
         this.baseDefense = baseDefense;
 
-        for (String s : attacks.keySet()) {
-            attacksNames.add(s);
-        }
-
+        attacks.keySet().forEach(key -> attacksNames.add(key));
     }
 
     public Map<String, Map<String, Integer>> getAttacks() {
