@@ -64,21 +64,21 @@ public class ExplorationActions {
 
     protected static void getItem(Session gameSession, String command) {
 
-        boolean found = false;
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
 
             if (gameSession.getInventory().size() + 1 < gameSession.getInventoryCapacity()) {
 
-                gameSession.getCurrentRoom().getItems().stream().filter(item -> command.equals(item.getName()))
-                        .forEach(item -> {
-                            System.out.println("Hai preso " + item.getNameWithIndetArticle() + "!");
-                            gameSession.getInventory().add(item);
-                            gameSession.getCurrentRoom().getItems().remove(item);
-                        });
+                if (gameSession.getCurrentRoom().getItems().stream().anyMatch(item -> command.equals(item.getName()))) {
+                    gameSession.getCurrentRoom().getItems().stream().filter(item -> command.equals(item.getName()))
+                            .findFirst().ifPresent(item -> {
+                                System.out.println("Hai preso " + item.getNameWithIndetArticle() + "!");
+                                InventoryHandler.addItem(gameSession, item);
+                                gameSession.getCurrentRoom().getItems().remove(item);
+                            });
 
-                if (!found) {
-                    System.out.println("Non c'è nessun item con questo nome...");
-                }
+                } else
+                    System.out.println("Non c'è nessun item con quel nome...");
+
             } else
                 System.out.println("Non hai spazio per altri oggetti!");
         } else
@@ -91,6 +91,7 @@ public class ExplorationActions {
             System.out.println("Al momento, l'inventario è vuoto.");
         } else {
             System.out.println("Nell'inventario hai:");
+
             int counter = gameSession.getInventory().size();
             int repetition = 0;
             do {
@@ -121,6 +122,7 @@ public class ExplorationActions {
 
             } while (counter > 0);
         }
+
     }
 
     protected static void startEvent(Session gameSession) {

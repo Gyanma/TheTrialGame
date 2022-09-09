@@ -202,11 +202,12 @@ public class Parser {
                 if (newCommand.startsWith("con")) { // the command introduces the weapon with "con"
                     newCommand = newCommand.replaceFirst("con", "");
                     newCommand = newCommand.trim();
+                    System.out.println(newCommand);
                     firstNoun = lookForNoun(newCommand);
                     if (firstNoun.equals("fail"))
                         return "fail";
                     newCommand = clearCommand(newCommand, firstNoun);
-
+                    break;
                 }
 
             default:

@@ -37,7 +37,7 @@ public class RunHandler {
         // if (input.equals("S")) {
         // Printer.printFromTxt("Regole");
         // }
-        Printer.printFromTxt("Inizio");
+        // Printer.printFromTxt("Inizio");
         int action = 1;
         String command;
         String parsedCommand;

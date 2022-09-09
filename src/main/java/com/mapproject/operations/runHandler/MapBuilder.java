@@ -407,7 +407,6 @@ public class MapBuilder {
         if (map.getVisitableRooms().size() > 10) {
             addPacificEncounter(content);
         }
-
         // add a visual puzzle if the map is large enough
         if (map.getVisitableRooms().size() > 12 && map.getPhase() > 1) {
             addVisualPuzzles(content);
