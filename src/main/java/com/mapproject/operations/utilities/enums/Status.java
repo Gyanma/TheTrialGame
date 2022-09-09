@@ -5,6 +5,6 @@ public enum Status {
     PUZZLE_SOLVING,
     FIGHTING,
     IN_DANGER,
-    IN_PACIFIC_ENCOUNTER
-
+    IN_PACIFIC_ENCOUNTER,
+    DONATING_ITEM
 }

@@ -56,8 +56,10 @@
     "Spada": [
         "la spada",
         "una spada",
+        "sulla spada",
         "la lama",
-        "una lama"
+        "una lama",
+        "sulla lama"
     ],
     "Pozione del fulmine": [
         "la pozione del fulmine",
@@ -73,13 +75,16 @@
     ],
     "Fionda": [
         "la fionda",
-        "una fionda"
+        "una fionda",
+        "sulla fionda"
     ],
     "Maglio": [
         "il maglio",
         "un maglio",
+        "sul maglio",
         "il martello",
-        "un martello"
+        "un martello",
+        "sul martello"
     ],
     "Armatura": [
         "l\u0027armatura",
@@ -88,10 +93,13 @@
     "Lancia": [
         "la lancia",
         "una lancia",
+        "sulla lancia",
         "l\u0027asta",
         "un\u0027asta",
+        "sull\u0027asta",
         "il giavellotto",
-        "un giavellotto"
+        "un giavellotto",
+        "sul giavellotto"
     ],
     "Pozione del gelo": [
         "la pozione del gelo",
@@ -108,8 +116,10 @@
     "Katana": [
         "la katana",
         "una katana",
+        "sulla katana",
         "la spada",
-        "una spada"
+        "una spada",
+        "sulla spada"
     ],
     "Pozione di cura": [
         "la pozione di cura",
@@ -120,14 +130,18 @@
     "Ascia": [
         "l\u0027ascia",
         "un\u0027ascia",
+        "sulla\u0027ascia",
         "l\u0027accetta",
         "un\u0027accetta",
+        "sull\u0027accetta",
         "la scure",
-        "una scure"
+        "una scure",
+        "sulla scure"
     ],
     "Arco": [
         "l\u0027arco",
-        "un arco"
+        "un arco",
+        "sull\u0027arco"
     ],
     "Calzari magici": [
         "i calzari magici",
@@ -195,7 +209,8 @@
     ],
     "Balestra": [
         "la balestra",
-        "una balestra"
+        "una balestra",
+        "sulla balestra"
     ],
     "Bestiario": [
         "il bestiario"
@@ -222,13 +237,16 @@
     ],
     "Shuriken": [
         "gli shuriken",
-        "degli shuriken"
+        "degli shuriken",
+        "sugli shuriken"
     ],
     "Pugnale": [
         "il pugnale",
         "un pugnale",
+        "sul pugnale",
         "il coltello",
-        "un coltello"
+        "un coltello",
+        "sul coltello"
     ],
     "Monocolo del cacciatore": [
         "il monocolo del cacciatore",

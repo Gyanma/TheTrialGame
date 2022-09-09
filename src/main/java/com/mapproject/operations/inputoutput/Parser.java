@@ -24,19 +24,25 @@ public class Parser {
         // if the command can be traced to a correct puzzle
         // solution, the standard solution is returned
         for (String key : puzzleSolutionsDictionary.keySet()) { // for each solution in the dictionary
-            for (String string : puzzleSolutionsDictionary.get(key)) { // for each alternative solution
-                if (command.equals(string))
-                    return key;
+            if (puzzleSolutionsDictionary.get(key).contains(command)) { // if the command is a solution
+                return key; // return the standard solution
+            }
+        }
+
+        // if the command consists of an object, it is returned as it is
+        // N.B. a command consisting of a single object is to be accepted
+        // only when waiting for the second part of an action
+        for (String key : nounDictionary.keySet()) { // for each object in the dictionary
+            if (nounDictionary.get(key).contains(command)) { // if the command is an object
+                return key; // return the object
             }
         }
 
         // if the command can be traced back to a complete action,
         // the standard command is returned
-
         for (String key : completeActionsDictionary.keySet()) { // for each action in the dictionary
-            for (String string : completeActionsDictionary.get(key)) { // for each alternative name of the action
-                if (command.equals(string))
-                    return key;
+            if (completeActionsDictionary.get(key).contains(command)) { // if the command is an action
+                return key; // return the standard command
             }
         }
 
@@ -85,7 +91,7 @@ public class Parser {
                 break;
 
             case "Raccogli":
-
+                // expects a noun
                 firstNoun = lookForNoun(newCommand);
 
                 if (!firstNoun.equals("fail"))
@@ -110,76 +116,17 @@ public class Parser {
 
                 if (!firstNoun.equals("fail"))
                     sentenceFound = true;
+                newCommand = clearCommand(newCommand, firstNoun);
 
-                if (sentenceFound) {
-                    System.out.println("nome1: " + firstNoun);
-                    //TODO aggiusta print
-
-                    newCommand = clearCommand(newCommand, firstNoun); // the command is cleared of the already used name
-
-                    if (newCommand != null) {
-
-                        if (newCommand.startsWith("su")) { // the command might ask to use an item on smth
-
-                            System.out.println("nome2: " + newCommand);
-
-                            newCommand = newCommand.replaceFirst("su", "");
-                            newCommand = newCommand.trim();
-
-                            System.out.println("nome3: " + newCommand);
-
-                            secondNoun = lookForNoun(newCommand);
-
-                            if (!secondNoun.equals("fail"))
-                                sentenceFound = true;
-
-                            System.out.println("nome4: " + secondNoun);
-
-                            newCommand = clearCommand(newCommand, secondNoun);
-
-                            System.out.println("nome5: " + newCommand);
-                        }
-                    }
-                }
                 break;
 
             case "Cerca":
-
                 // expects a noun
                 firstNoun = lookForNoun(newCommand);
 
                 if (!firstNoun.equals("fail"))
                     sentenceFound = true;
-
-                if (sentenceFound) {
-
-                    newCommand = clearCommand(newCommand, firstNoun);
-
-                    if (newCommand != null) {
-
-                        if (newCommand.contains("su")) { // the command involves searching for an item on another one
-                            newCommand = newCommand.replaceFirst("su", "");
-                            newCommand = newCommand.trim();
-
-                            secondNoun = lookForNoun(newCommand);
-
-                            if (!secondNoun.equals("fail"))
-                                sentenceFound = true;
-
-                            newCommand = clearCommand(newCommand, secondNoun);
-
-                            // the search action is treated as a special case of the use action
-                            action = "Usa";
-
-                            // the names are switched to accomodate the logic of the interpreter
-                            String tempString = secondNoun;
-                            secondNoun = firstNoun;
-                            firstNoun = tempString;
-
-                        } else // if no second noun is found, the command is invalid
-                            sentenceFound = false;
-                    }
-                }
+                newCommand = clearCommand(newCommand, firstNoun);
                 break;
 
             case "Esamina":
@@ -208,35 +155,7 @@ public class Parser {
 
                 if (!firstNoun.equals("fail"))
                     sentenceFound = true;
-
-                if (sentenceFound) {
-                    sentenceFound = false;
-
-                    newCommand = clearCommand(newCommand, firstNoun);
-
-                    if (newCommand.startsWith("per")) { // the command might ask to give something in
-                                                        // exchange of something else
-                        newCommand = newCommand.replaceFirst("per", "");
-
-                        newCommand = newCommand.trim();
-
-                        secondNoun = lookForNoun(newCommand);
-                        if (!secondNoun.equals("fail"))
-                            sentenceFound = true;
-                        newCommand = clearCommand(newCommand, secondNoun);
-
-                    } else if (newCommand.startsWith("in cambio di")) {
-                        newCommand = newCommand.replaceFirst("in cambio di", "");
-
-                        newCommand = newCommand.trim();
-
-                        secondNoun = lookForNoun(newCommand);
-                        if (!secondNoun.equals("fail"))
-                            sentenceFound = true;
-                        newCommand = clearCommand(newCommand, secondNoun);
-                    }
-
-                }
+                newCommand = clearCommand(newCommand, firstNoun);
                 break;
 
             case "Svuota":
@@ -297,27 +216,6 @@ public class Parser {
                         sentenceFound = true;
                     newCommand = clearCommand(newCommand, firstNoun);
 
-                } else { // second possibility: the command specifies the target and the weapon
-
-                    // looks for a noun
-                    // that noun is supposed to be the target, so it's placed as second noun
-                    secondNoun = lookForNoun(newCommand);
-                    if (!secondNoun.equals("fail"))
-                        sentenceFound = true;
-                    newCommand = clearCommand(newCommand, secondNoun);
-
-                    if (sentenceFound) {
-                        sentenceFound = false;
-
-                        if (newCommand.startsWith("con")) { // the command introduces the weapon with "con"
-                            newCommand = newCommand.replaceFirst("con", "");
-                            newCommand = newCommand.trim();
-                            firstNoun = lookForNoun(newCommand);
-                            if (!firstNoun.equals("fail"))
-                                sentenceFound = true;
-                            newCommand = clearCommand(newCommand, firstNoun);
-                        }
-                    }
                 }
 
             default:
@@ -337,14 +235,8 @@ public class Parser {
     private static String lookForNoun(String newCommand) {
 
         for (String key : nounDictionary.keySet()) { // for each key in the dictionary
-            for (String string : nounDictionary.get(key)) { // for each possible alternative for the key
-
-                if (newCommand.startsWith(string)) { // if the command start with the alternative,
-                    // an acceptable noun is found
-
-                    return key; // the archetype of the noun is saved
-
-                }
+            if (nounDictionary.get(key).contains(newCommand)) { // if the command contains the key
+                return key; // return the key
             }
         }
         return "fail";

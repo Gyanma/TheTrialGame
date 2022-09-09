@@ -9,6 +9,7 @@ import java.util.Set;
 
 import com.mapproject.resources.GameMap;
 import com.mapproject.resources.Room;
+import com.mapproject.resources.Session;
 import com.mapproject.resources.items.Item;
 import com.mapproject.resources.items.Weapon;
 
@@ -103,7 +104,8 @@ public class Utilities {
 
     }
 
-    public static int selectRoomFromSet(int randomNumber, Set<Integer> visitableRooms) {
+    public static int selectRoomFromSet(Set<Integer> visitableRooms) {
+        int randomNumber = (int) (Math.random() * visitableRooms.size() + 1);
         int roomId = 0;
         int i = 1;
         for (Integer room : visitableRooms) {
@@ -125,8 +127,21 @@ public class Utilities {
         return false;
     }
 
+    public static void placeRandomDebuff(Session gameSession) {
 
+        int randomNumber = (int) (Math.random());
 
+        if (randomNumber < 0.33) {
+            gameSession.setAccuracyModifier(gameSession.getAccuracyModifier() - 0.1);
+            System.out.println("Senti la tua mira farsi più scarna...");
+        } else if (randomNumber < 0.66) {
+            gameSession.setAttackModifier(gameSession.getAttackModifier() - 0.1);
+            System.out.println("Senti la tua forza farsi più debole...");
+        } else {
+            gameSession.setAgilityModifier(gameSession.getAgilityModifier() - 0.1);
+            System.out.println("Senti i tuoi movimenti farsi più lenti...");
+        }
+    }
 
 
 }

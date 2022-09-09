@@ -5,6 +5,7 @@ import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.Danger;
 import com.mapproject.resources.events.Enemy;
+import com.mapproject.resources.events.PacificEncounter;
 import com.mapproject.resources.events.VisualPuzzle;
 
 public class Interpreter {
@@ -21,6 +22,16 @@ public class Interpreter {
      *         is reached;
      */
     public static int operate(String command, Session gameSession) {
+
+        if (gameSession.getItemHeldInCommand() != null) {
+            if (gameSession.getCurrentStatus() == Status.DONATING_ITEM)
+                PacificEncounterActions.donateItem(gameSession, command);
+            else if (gameSession.isUsingItem())
+                InventoryHandler.useItem(gameSession, command);
+
+            return 1;
+
+        }
 
         // explore room command
         if (command.equals("Esplora stanza")) {
@@ -45,29 +56,35 @@ public class Interpreter {
 
                     command = command.replace("Spostati ", "");
                     command = command.trim();
+                    boolean moved = false;
                     if (command.equals("nord")) {
                         MovementActions.moveToNorth(gameSession);
+                        moved = true;
                     } else if (command.equals("sud")) {
                         MovementActions.moveToSouth(gameSession);
+                        moved = true;
                     } else if (command.equals("ovest")) {
                         MovementActions.moveToWest(gameSession);
+                        moved = true;
                     } else if (command.equals("est")) {
                         MovementActions.moveToEast(gameSession);
-                    } else {
+                        moved = true;
+                    } else
                         return 2;
-                    }
 
-                    if (gameSession.getCurrentRoom().getEvent() != null &&
-                            gameSession.getCurrentRoom().getEvent().getClass() == Danger.class) {
-                        // if the player reaches a danger event
-                        DangerActions.launchDanger(gameSession);
-                        gameSession.addEncounteredDanger();
+                    if (moved) {
+                        if (gameSession.getCurrentRoom().getEvent() != null &&
+                                gameSession.getCurrentRoom().getEvent().getClass() == Danger.class) {
+                            // if the player reaches a danger event
+                            DangerActions.launchDanger(gameSession);
+                            gameSession.addEncounteredDanger();
+                            return 1;
+                        }
+                        if (gameSession.getCurrentRoom().getEvent() != null &&
+                                gameSession.getCurrentMap().getEndRoomId() == gameSession.getCurrentRoomId())
+                            // if the player reaches the boss room
+                            System.out.println("Senti una presenza inquietante... Dev'essere la stanza finale!");
                     }
-                    if (gameSession.getCurrentRoom().getEvent() != null &&
-                            gameSession.getCurrentMap().getEndRoomId() == gameSession.getCurrentRoomId())
-                        // if the player reaches the boss room
-                        System.out.println("Senti una presenza inquietante... Dev'essere la stanza finale!");
-
                 } else {
                     // print the reason why the player can't move
                     if (gameSession.getCurrentRoom().getEvent().getClass() == VisualPuzzle.class) {
@@ -161,12 +178,24 @@ public class Interpreter {
         } else if (command.startsWith("Consegna")) {
             command = command.replace("Consegna", "");
             command = command.trim();
-            PacificEncounterActions.donateItem(gameSession, command);
+            if (gameSession.getCurrentRoom().getEvent() != null &&
+                    gameSession.getCurrentRoom().getEvent().getClass() == PacificEncounter.class) {
+                // if the event is a pacific encounter
+                PacificEncounterActions.donateItem(gameSession, command);
+            } else
+                System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+                
             return 1;
 
             // pray command
         } else if (command.equals("Prega")) {
-            PacificEncounterActions.pray(gameSession);
+            if (gameSession.getCurrentRoom().getEvent() != null &&
+                    gameSession.getCurrentRoom().getEvent().getClass() == PacificEncounter.class) {
+                // if the event is a pacific encounter
+                PacificEncounterActions.pray(gameSession);
+            } else
+                System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+
             return 1;
 
             // Jug Puzzle
@@ -192,6 +221,8 @@ public class Interpreter {
             // Battle section
             // attack command
         } else if (command.startsWith("Attacca")) {
+            command = command.replace("Attacca ", "");
+            command = command.trim();
             return FightActions.attack(gameSession, command);
 
             // possible response to text puzzle
@@ -204,12 +235,4 @@ public class Interpreter {
             return 2;
         }
     }
-
-
-
-
-
-
-
-
 }

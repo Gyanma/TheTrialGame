@@ -119,8 +119,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
 
         } while (map.getRoom(roomId).getEvent() != null || map.getStartingRoomId() == roomId);
 
@@ -154,8 +153,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
         } while (map.getRoom(roomId).getEvent() != null || map.getStartingRoomId() == roomId);
 
         // add the danger to the room
@@ -176,8 +174,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
         } while (map.getRoom(roomId).getEvent() != null || map.getStartingRoomId() == roomId);
 
         // add the enemy to the room
@@ -208,8 +205,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
 
         } while (map.getRoom(roomId).getEvent() != null || map.getStartingRoomId() == roomId);
 
@@ -239,8 +235,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
 
         } while (map.getRoom(roomId).getEvent() != null || map.getStartingRoomId() == roomId);
 
@@ -260,8 +255,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
         } while (map.getRoom(roomId).getItems().size() != 0);
         // add the item to the room
         Room tempRoom = map.getRoom(roomId);
@@ -279,7 +273,6 @@ public class MapBuilder {
     }
 
     private void addWeapon(Map<String, List<Integer>> content) {
-        // choose a random weapon
         Integer chosenWeapon;
         Integer weaponId;
         Weapon weapon;
@@ -307,8 +300,7 @@ public class MapBuilder {
         // choose a random room
         int roomId;
         do {
-            roomId = Utilities.selectRoomFromSet(
-                    (int) (Math.random() * map.getVisitableRooms().size() + 1), map.getVisitableRooms());
+            roomId = Utilities.selectRoomFromSet(map.getVisitableRooms());
 
         } while (map.getRoom(roomId).getItems().contains(weapon) || map.getStartingRoomId() == roomId);
 
@@ -406,6 +398,7 @@ public class MapBuilder {
             }
         }
         // fill the map with enemies
+
         for (int i = 0; i < enemyNumber; i++) {
             addEnemies();
         }
@@ -416,9 +409,7 @@ public class MapBuilder {
         }
 
         // add a visual puzzle if the map is large enough
-
-        //TODO aggiusta fase
-        if (map.getVisitableRooms().size() > 12) {
+        if (map.getVisitableRooms().size() > 12 && map.getPhase() > 1) {
             addVisualPuzzles(content);
         }
 

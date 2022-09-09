@@ -32,7 +32,7 @@ public class TextPuzzleActions {
                     gameSession.setCurrentStatus(Status.EXPLORING);
                     gameSession.getCurrentRoom().setEvent(null);
                 } else {
-                    Printer.printFromTxt(textPuzzle.getTryAgainReply());
+                    Printer.printFromString(textPuzzle.getTryAgainReply());
                 }
             }
 

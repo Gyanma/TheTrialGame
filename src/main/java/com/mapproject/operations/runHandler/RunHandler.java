@@ -27,36 +27,37 @@ public class RunHandler {
 
     public void runGame(Session newSession) {
 
-        //TODO rimetti il print
-        //Printer.printFromTxt("Presentazione");
-        //String input = gameScanner.nextLine();
-        //while (!input.equals("N") && !input.equals("S")) {
-          //          System.out.println("Come dici?");
-            //        input = gameScanner.nextLine();
-        //}
-        //if (input.equals("S")) {
-          //  Printer.printFromTxt("Regole");
-       //}
+        // TODO rimetti il print
+        // Printer.printFromTxt("Presentazione");
+        // String input = gameScanner.nextLine();
+        // while (!input.equals("N") && !input.equals("S")) {
+        // System.out.println("Come dici?");
+        // input = gameScanner.nextLine();
+        // }
+        // if (input.equals("S")) {
+        // Printer.printFromTxt("Regole");
+        // }
         Printer.printFromTxt("Inizio");
         int action = 1;
         String command;
         String parsedCommand;
 
-        System.out.println("\nCosa vuoi fare?");
         do {
+
+            if (action == 1) {
+                if (gameSession.getCurrentStatus() != Status.DONATING_ITEM
+                        && gameSession.getCurrentStatus() != Status.PUZZLE_SOLVING
+                        && gameSession.getItemHeldInCommand() == null) 
+                    System.out.println("\nCosa vuoi fare?");
+            }
             command = gameScanner.nextLine();
             parsedCommand = Parser.parseCommand(command);
             if (!parsedCommand.equals("Chiudi il gioco")) {
                 action = Interpreter.operate(parsedCommand, gameSession);
-                if (action == 1 && gameSession.getCurrentStatus() != Status.PUZZLE_SOLVING) {
-                    System.out.println("\nCosa vuoi fare?");
-                } else if (action == 2) {
-                    System.out.println("\nNon ho ben capito cosa vuoi fare...");
+                if (action == 2) {
+                    System.out.println("\nNon ho ben capito...");
                 }
-            } else
-                action = 0;
-
-            if (action == 0) {
+            } else {
                 System.out.println("Sei sicuro? (S/N)");
                 String answer = gameScanner.nextLine();
                 while (!answer.equals("S") && !answer.equals("N")) {
@@ -65,15 +66,11 @@ public class RunHandler {
                 }
                 if (answer.equals("N")) {
                     action = 1;
-                    System.out.println("\nCosa vuoi fare?");
-                }
+                } else
+                    action = 0;
             }
 
-            if (action == 3 || action == 4) {
-                action = 0;
-            }
-
-        } while (action != 0 && gameSession.isPlayerAlive());
+        } while (action != 0 && gameSession.isPlayerAlive() && action != 3);
 
         System.out.println("Arrivederci!");
         System.exit(0);

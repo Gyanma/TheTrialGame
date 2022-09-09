@@ -1,7 +1,6 @@
 package com.mapproject.operations.actions;
 
 import com.mapproject.resources.Session;
-import com.mapproject.resources.items.Item;
 import com.mapproject.resources.items.Weapon;
 
 public class EventHandler {
@@ -23,12 +22,10 @@ public class EventHandler {
                 System.out.println("Ti senti più agile nel movimento!");
             }
         } else {
-            int countWeapon = 0;
-            for (Item item : gameSession.getInventory()) {
-                if (item.getClass() == Weapon.class) {
-                    countWeapon++;
-                }
-            }
+
+            int countWeapon = (int) gameSession.getInventory().stream().filter(item -> item.getClass() == Weapon.class)
+                    .count();
+
             if (countWeapon > 0) {
                 int chosenWeapon = (int) (Math.random() * countWeapon);
                 countWeapon = 0;

@@ -9,6 +9,6 @@
     "nameWithIndetArticle": "un pugnale",
     "description": "Un pugnale trovato nel labirinto. Perfetto per chi preferisce combattere dall'ombra.",
     "accuracy": 90,
-    "agility": 50,
+    "agility": 60,
     "id": 1103
 }

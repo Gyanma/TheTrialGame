@@ -111,6 +111,11 @@ Per ogni comando sono previsti una serie di comandi alternativi di significato s
     	Esamina il cibo
     	Studia l’arco
 
+-   Scambiare un item con un personaggio
+
+        Consegna l'acchiappasogni
+        Offri il pugnale per la pozione del fuoco
+
 Si aggiunge il comando unico "Chiudi il gioco" che permette di chiudere l'applicazione.
 
 > ### Soluzioni

@@ -2,6 +2,7 @@ package com.mapproject.operations.actions;
 
 import com.mapproject.operations.inputoutput.Printer;
 import com.mapproject.operations.runHandler.Loader;
+import com.mapproject.operations.utilities.Utilities;
 import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.Danger;
@@ -70,24 +71,16 @@ public class DangerActions {
                     gameSession.getCurrentRoom().setEvent(null);
                     gameSession.setCurrentStatus(Status.EXPLORING);
 
-                    if (gameSession.getInventory().size() > 2) {
-                        Item item;
-                        do {
-                            item = gameSession.getInventory()
-                                    .get((int) Math.random() * gameSession.getInventory().size());
-                        } while (!item.isFindable());
+                    Utilities.placeRandomDebuff(gameSession);
 
-                        gameSession.removeItemFromInventory(item);
-                        System.out.println(
-                                "Ti controlli le tasche e noti di aver perso " + item.getNameWithIndetArticle() + ".");
-
-                    }
-
+                    System.out.println("Che vuoi fare?");
                 }
+                
             }
         }
 
         new Thread(new DangerQueue()).start();
+        
     }
 
     protected static void checkEscape(Session gameSession, String command) {

@@ -4,7 +4,6 @@ import com.mapproject.operations.utilities.enums.Status;
 import com.mapproject.resources.Fight;
 import com.mapproject.resources.Session;
 import com.mapproject.resources.events.Enemy;
-import com.mapproject.resources.items.Item;
 import com.mapproject.resources.items.Weapon;
 
 public class FightActions {
@@ -36,26 +35,9 @@ public class FightActions {
             // if there is an enemy in the room
 
             if (gameSession.getCurrentStatus() == Status.FIGHTING) { // if the fight is on
-                command = command.replace("Attacca ", "");
-                command = command.trim();
 
-                if (command.contains("+")) { // player indicated target of attack
-                    String[] newCommand = command.split("\\+");
-                    if (newCommand[1].equals(gameSession.getCurrentRoom().getEvent().getName())) { // if the target is
-                                                                                                   // correct, proceed
-                        command = newCommand[0];
-                    } else
-                        return 2;
-                }
-
-                Weapon chosenWeapon = null;
-
-                for (Item item : gameSession.getInventory()) {
-                    if (command.equals(item.getName()) &&
-                            item.getClass() == Weapon.class) { // look for the correct weapon in the inventory
-                        chosenWeapon = (Weapon) item;
-                    }
-                }
+                Weapon chosenWeapon = (Weapon) gameSession.getInventory().stream()
+                        .filter(item -> command.equals(item.getName())).findFirst().orElse(null);
 
                 if (chosenWeapon == null) { // weapon not found
                     System.out.println("Non capisco come vuoi attaccare...");
@@ -75,32 +57,14 @@ public class FightActions {
                     System.out.println("Il nemico è sconfitto!");
                     gameSession.addBeatenEnemy();
 
-                    gameSession.setHealthPoints(gameSession.getHealthPoints() + 5);
+                    // TODO +5 hp
+                    gameSession.setHealthPoints(gameSession.getMaxHealthPoints());
                     System.out.println("Guadagni 5 punti vita!");
 
-                    for (Item item : gameSession.getInventory()) { // remove items that only last one battle
-                        if (item.getName().equals("Libro della forza")
-                                && item.isUsed()) {
-                            gameSession.removeItemFromInventory(item);
-                            System.out.println("Il libro della forza svanisce nel nulla!");
-
-                        } else if (item.getName().equals("Libro dell'accuratezza")
-                                && item.isUsed()) {
-                            gameSession.removeItemFromInventory(item);
-                            System.out.println("Il libro dell'accuratezza svanisce nel nulla!");
-
-                        } else if (item.getName().equals("Libro della destrezza")
-                                && item.isUsed()) {
-                            gameSession.removeItemFromInventory(item);
-                            System.out.println("Il libro della destrezza svanisce nel nulla!");
-
-                        } else if (item.getName().equals("Fiala del sangue")
-                                && item.isUsed()) {
-                            gameSession.removeItemFromInventory(item);
-                            System.out.println("Il libro della forza svanisce nel nulla!");
-                        }
-                    }
-
+                    gameSession.getInventory().stream().filter(item -> item.isUsed()).forEach(item -> {
+                        gameSession.removeItemFromInventory(item);
+                        System.out.println(item.getNameWithDetArticle() + "svanisce nel nulla!");
+                    });
                 }
 
                 if (!gameSession.isPlayerAlive()) {
@@ -128,5 +92,4 @@ public class FightActions {
         return 1;
     }
 
-    
 }

@@ -9,7 +9,6 @@ import com.mapproject.resources.events.Enemy;
 import com.mapproject.resources.events.JugPuzzle;
 import com.mapproject.resources.events.PacificEncounter;
 import com.mapproject.resources.events.TextPuzzle;
-import com.mapproject.resources.items.Item;
 
 public class ExplorationActions {
     protected static void exploreRoom(Session gameSession) {
@@ -33,17 +32,17 @@ public class ExplorationActions {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             if (gameSession.getCurrentRoom().getItems() != null
                     && gameSession.getCurrentRoom().getItems().size() > 0) {
-                for (Item item : gameSession.getCurrentRoom().getItems()) {
 
+                gameSession.getCurrentRoom().getItems().forEach(item -> {
                     System.out.println("Nella stanza vedi "
                             + (item.getNameWithIndetArticle()) + "!");
-                }
+                });
+
             } else
                 System.out.println("Non c'è nulla qui...");
         } else
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
     }
-
 
     protected static void drawMap(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
@@ -70,17 +69,13 @@ public class ExplorationActions {
 
             if (gameSession.getInventory().size() + 1 < gameSession.getInventoryCapacity()) {
 
-                for (Item item : gameSession.getCurrentRoom().getItems()) {
+                gameSession.getCurrentRoom().getItems().stream().filter(item -> command.equals(item.getName()))
+                        .forEach(item -> {
+                            System.out.println("Hai preso " + item.getNameWithIndetArticle() + "!");
+                            gameSession.getInventory().add(item);
+                            gameSession.getCurrentRoom().getItems().remove(item);
+                        });
 
-                    if (command.equals(item.getName())) {
-
-                        System.out.println("Hai raccolto " + item.getNameWithDetArticle() + ".");
-                        InventoryHandler.addItem(gameSession, item);
-                        gameSession.getCurrentRoom().removeItem(item);
-                        found = true;
-                        break;
-                    }
-                }
                 if (!found) {
                     System.out.println("Non c'è nessun item con questo nome...");
                 }
@@ -96,33 +91,35 @@ public class ExplorationActions {
             System.out.println("Al momento, l'inventario è vuoto.");
         } else {
             System.out.println("Nell'inventario hai:");
-            int counter = 0;
+            int counter = gameSession.getInventory().size();
+            int repetition = 0;
             do {
-                if (gameSession.getInventory().size() - counter >= 4) {
+                if (counter >= 4) {
                     System.out.println(
-                            gameSession.getInventory().get(counter).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 1).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 2).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 3).getName());
-                    counter += 4;
-                } else if (gameSession.getInventory().size() - counter == 3) {
+                            gameSession.getInventory().get(repetition).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 1).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 2).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 3).getName());
+                    counter -= 4;
+                } else if (counter % 4 == 3) {
                     System.out.println(
-                            gameSession.getInventory().get(counter).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 1).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 2).getName());
-                    counter += 3;
-                } else if (gameSession.getInventory().size() - counter == 2) {
+                            gameSession.getInventory().get(repetition).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 1).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 2).getName());
+                    counter -= 3;
+                } else if (counter % 4 == 2) {
                     System.out.println(
-                            gameSession.getInventory().get(counter).getName() + "\t\t\t"
-                                    + gameSession.getInventory().get(counter + 1).getName());
-                    counter += 2;
-                } else if (gameSession.getInventory().size() - counter == 1) {
+                            gameSession.getInventory().get(repetition).getName() + "\t\t\t"
+                                    + gameSession.getInventory().get(repetition + 1).getName());
+                    counter -= 2;
+                } else if (counter % 4 == 1) {
                     System.out.println(
-                            gameSession.getInventory().get(counter).getName());
-                    counter += 1;
+                            gameSession.getInventory().get(repetition).getName());
+                    counter -= 1;
                 }
+                repetition += 4;
 
-            } while (counter < gameSession.getInventory().size());
+            } while (counter > 0);
         }
     }
 
@@ -151,6 +148,5 @@ public class ExplorationActions {
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
 
     }
-
 
 }

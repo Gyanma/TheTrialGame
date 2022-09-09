@@ -55,6 +55,10 @@ public class Session {
 
     private Map<String, List<Integer>> content;
 
+    private String itemHeldInCommand = null;
+
+    private boolean usingItem = false;
+
     public Session() {
 
         content = Loader.loadContent();
@@ -227,6 +231,22 @@ public class Session {
         this.currentFight = currentFighting;
     }
 
+    public String getItemHeldInCommand() {
+        return itemHeldInCommand;
+    }
+
+    public void setItemHeldInCommand(String itemHeldInCommand) {
+        this.itemHeldInCommand = itemHeldInCommand;
+    }
+
+    public boolean isUsingItem() {
+        return usingItem;
+    }
+
+    public void setUsingItem(boolean usingItem) {
+        this.usingItem = usingItem;
+    }
+
     public void addEncounteredPuzzle() {
         encounteredPuzzlesCount++;
     }
@@ -291,9 +311,6 @@ public class Session {
         System.out.println("Voto sull'onore: " + puzzleScore);
         System.out.println("Voto sull'ingegno: " + dangerScore);
         System.out.println("Voto sul valore: " + enemyScore);
-        
-
-
 
     }
 

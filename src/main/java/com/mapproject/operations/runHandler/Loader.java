@@ -60,11 +60,10 @@ public class Loader {
     public static Weapon loadWeapon(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\weapons\\"
-                            + element + ".json");
-            Weapon weapon = new Gson().fromJson(reader, Weapon.class);
-            return weapon;
+                            + element + ".json"),
+                    Weapon.class);
         } catch (IOException e) {
             return null;
         }
@@ -77,11 +76,10 @@ public class Loader {
     public static Enemy loadEnemy(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\enemies\\"
-                            + element + ".json");
-            Enemy enemy = new Gson().fromJson(reader, Enemy.class);
-            return enemy;
+                            + element + ".json"),
+                    Enemy.class);
         } catch (IOException e) {
             return null;
         }
@@ -94,11 +92,10 @@ public class Loader {
     public static TextPuzzle loadTextPuzzle(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\"
-                            + element + ".json");
-            TextPuzzle textPuzzle = new Gson().fromJson(reader, TextPuzzle.class);
-            return textPuzzle;
+                            + element + ".json"),
+                    TextPuzzle.class);
         } catch (IOException e) {
             return null;
         }
@@ -110,52 +107,50 @@ public class Loader {
     }
 
     public static JugPuzzle loadJugPuzzle(String element) {
-            try {
-                JugPuzzle jugPuzzle = new Gson().fromJson(new FileReader(
-                        "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                + element + "\\" + element + ".json"),
-                        JugPuzzle.class);
-                        Jug jug1 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\jug1.json"),
-                            Jug.class);
-        
-                    Jug jug2 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\jug2.json"),
-                            Jug.class);
-        
-                    Jug jug3 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\jug3.json"),
-                            Jug.class);
-        
-                    jugPuzzle.setPlayerJugSet(new JugSet(jug1, jug2, jug3));
-        
-                    Jug correctJug1 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\correctJug1.json"),
-                            Jug.class);
-        
-                    Jug correctJug2 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\correctJug2.json"),
-                            Jug.class);
-        
-                    Jug correctJug3 = new Gson().fromJson(new FileReader(
-                            "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
-                                    + element + "\\correctJug3.json"),
-                            Jug.class);
-        
-                    jugPuzzle.setCorrectJugSet(new JugSet(correctJug1, correctJug2, correctJug3));
-                    return jugPuzzle;
-            } catch (Exception e) {
-                e.printStackTrace();
-                return null;
-            }
-            
+        try {
+            JugPuzzle jugPuzzle = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\" + element + ".json"),
+                    JugPuzzle.class);
+            Jug jug1 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\jug1.json"),
+                    Jug.class);
 
+            Jug jug2 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\jug2.json"),
+                    Jug.class);
 
+            Jug jug3 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\jug3.json"),
+                    Jug.class);
+
+            jugPuzzle.setPlayerJugSet(new JugSet(jug1, jug2, jug3));
+
+            Jug correctJug1 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\correctJug1.json"),
+                    Jug.class);
+
+            Jug correctJug2 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\correctJug2.json"),
+                    Jug.class);
+
+            Jug correctJug3 = new Gson().fromJson(new FileReader(
+                    "src\\main\\java\\com\\mapproject\\resources\\archive\\text puzzles\\jug puzzles\\"
+                            + element + "\\correctJug3.json"),
+                    Jug.class);
+
+            jugPuzzle.setCorrectJugSet(new JugSet(correctJug1, correctJug2, correctJug3));
+
+            return jugPuzzle;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
 
     }
 
@@ -166,11 +161,10 @@ public class Loader {
     public static Danger loadDanger(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\dangers\\"
-                            + element + ".json");
-            Danger danger = new Gson().fromJson(reader, Danger.class);
-            return danger;
+                            + element + ".json"),
+                    Danger.class);
         } catch (IOException e) {
             return null;
         }
@@ -184,11 +178,10 @@ public class Loader {
     public static VisualPuzzle loadVisualPuzzle(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\visual puzzles\\"
-                            + element + ".json");
-            VisualPuzzle visualPuzzle = new Gson().fromJson(reader, VisualPuzzle.class);
-            return visualPuzzle;
+                            + element + ".json"),
+                    VisualPuzzle.class);
         } catch (IOException e) {
             return null;
 
@@ -202,11 +195,10 @@ public class Loader {
     public static PacificEncounter loadPacificEncounter(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\pacific encounters\\"
-                            + element + ".json");
-            PacificEncounter pacificEncounter = new Gson().fromJson(reader, PacificEncounter.class);
-            return pacificEncounter;
+                            + element + ".json"),
+                    PacificEncounter.class);
         } catch (IOException e) {
             return null;
         }
@@ -219,11 +211,10 @@ public class Loader {
     public static Item loadItem(String element) {
 
         try {
-            FileReader reader = new FileReader(
+            return new Gson().fromJson(new FileReader(
                     "src\\main\\java\\com\\mapproject\\resources\\archive\\items\\" + element
-                            + ".json");
-            Item item = new Gson().fromJson(reader, Item.class);
-            return item;
+                            + ".json"),
+                    Item.class);
         } catch (IOException e) {
             return null;
         }
