@@ -16,7 +16,8 @@ La mappa indica la conformazione delle stanze del labirinto dove ti trovi e segn
 La pergamena tiene nota in ogni momento del tuo status (punti vita, stat utili per la battaglia etc).
 In (quasi) ogni momento potrai aprire il tuo inventario ed esaminare o usare gli oggetti al loro interno.
 Alcuni oggetti potranno essere usati su altri oggetti, o sui nemici.
-In questi casi specifica anche il bersaglio dell'oggetto.
+In questi casi specifica prima l'oggetto da usare,
+e poi ti verrà chiesto il bersaglio dell'oggetto.
 Gli indovinelli richiedono sempre una risposta univoca.
 In alcuni potresti avere piu' possibilita'. Per altri, o la va o la spacca.
 Non tutti coloro che incontri hanno bisogno della tua arguzia.

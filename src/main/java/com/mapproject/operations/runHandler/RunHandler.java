@@ -27,17 +27,16 @@ public class RunHandler {
 
     public void runGame(Session newSession) {
 
-        // TODO rimetti il print
-        // Printer.printFromTxt("Presentazione");
-        // String input = gameScanner.nextLine();
-        // while (!input.equals("N") && !input.equals("S")) {
-        // System.out.println("Come dici?");
-        // input = gameScanner.nextLine();
-        // }
-        // if (input.equals("S")) {
-        // Printer.printFromTxt("Regole");
-        // }
-        // Printer.printFromTxt("Inizio");
+        Printer.printFromTxt("Presentazione");
+        String input = gameScanner.nextLine();
+        while (!input.equals("N") && !input.equals("S")) {
+            System.out.println("Come dici?");
+            input = gameScanner.nextLine();
+        }
+        if (input.equals("S")) {
+            Printer.printFromTxt("Regole");
+        }
+        Printer.printFromTxt("Inizio");
         int action = 1;
         String command;
         String parsedCommand;
@@ -47,7 +46,7 @@ public class RunHandler {
             if (action == 1) {
                 if (gameSession.getCurrentStatus() != Status.DONATING_ITEM
                         && gameSession.getCurrentStatus() != Status.PUZZLE_SOLVING
-                        && gameSession.getItemHeldInCommand() == null) 
+                        && gameSession.getItemHeldInCommand() == null)
                     System.out.println("\nCosa vuoi fare?");
             }
             command = gameScanner.nextLine();

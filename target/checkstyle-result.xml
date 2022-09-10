@@ -84,73 +84,74 @@
 <error line="32" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="42" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
 <error line="49" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="70" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="72" column="28" severity="error" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="87" column="47" severity="error" message="Comment has incorrect indentation level 46, expected is 16, indentation should be the same level as line 86." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="89" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="60" column="81" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="69" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="71" column="28" severity="error" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="86" column="47" severity="error" message="Comment has incorrect indentation level 46, expected is 16, indentation should be the same level as line 85." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="88" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\actions\Interpreter.java">
 <error line="11" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="11" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
 <error line="17" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 <error line="18" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="24" column="5" severity="error" message="Method length is 218 lines (max allowed is 150)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
-<error line="29" column="72" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="31" column="13" severity="error" message="&apos;}&apos; at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
-<error line="32" column="48" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="40" column="27" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="55" column="69" severity="error" message="&apos;||&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="58" column="82" severity="error" message="Comment has incorrect indentation level 81, expected is 20, indentation should be the same level as line 60." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="60" column="29" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="61" column="29" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="63" column="21" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="63" column="39" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="65" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="66" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="68" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="69" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="71" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="72" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="74" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="75" column="23" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="78" column="21" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="80" column="25" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="80" column="77" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="87" column="25" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="87" column="25" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="87" column="77" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="108" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="109" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="120" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="121" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="123" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="128" column="42" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="128" column="57" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="134" column="19" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="137" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="141" column="16" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="141" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="145" column="32" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="151" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="152" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="167" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="168" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="173" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="174" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="183" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="184" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="185" column="65" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="189" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="191" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="195" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="196" column="65" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="200" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="208" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="209" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="218" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="221" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="228" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
-<error line="229" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="24" column="5" severity="error" message="Method length is 215 lines (max allowed is 150)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
+<error line="27" column="72" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="29" column="13" severity="error" message="&apos;}&apos; at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="30" column="48" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="38" column="27" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="53" column="69" severity="error" message="&apos;||&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="56" column="82" severity="error" message="Comment has incorrect indentation level 81, expected is 20, indentation should be the same level as line 58." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="58" column="29" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="59" column="29" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="61" column="21" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="61" column="39" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="63" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="64" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="66" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="67" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="69" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="70" column="46" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="72" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="73" column="23" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="76" column="21" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="77" column="25" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="77" column="77" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="84" column="25" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="84" column="25" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="84" column="77" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="105" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="106" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="117" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="118" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="120" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="125" column="42" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="125" column="57" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="131" column="19" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="134" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="138" column="16" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="138" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="142" column="32" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="148" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="149" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="164" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="165" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="170" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="171" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="180" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="181" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="182" column="65" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="186" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="188" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="192" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="193" column="65" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="197" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="205" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="206" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="215" column="34" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="218" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="225" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
+<error line="226" column="21" severity="error" message="Assignment of parameter &apos;command&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\actions\InventoryHandler.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
@@ -225,14 +226,11 @@
 <error line="374" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="379" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="388" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="395" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="397" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="397" column="13" severity="error" message="&apos;if&apos; has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="397" column="56" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="398" column="13" severity="error" message="&apos;gameSession&apos; has incorrect indentation level 12, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="398" column="75" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="399" column="17" severity="error" message="&apos;if&apos; child has incorrect indentation level 16, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="400" column="13" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="396" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="396" column="56" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="397" column="13" severity="error" message="&apos;gameSession&apos; has incorrect indentation level 12, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="397" column="75" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="400" column="13" severity="error" message="&apos;method def&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\actions\MovementActions.java">
 <error line="7" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -274,35 +272,38 @@
 <error line="79" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
 <error line="83" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
 <error line="83" column="62" severity="error" message="&apos;-2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="84" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="91" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="110" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="112" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="83" column="67" severity="error" message="&apos;{&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="84" column="68" severity="error" message="Comment has incorrect indentation level 67, expected is 20, indentation should be the same level as line 85." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="85" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="92" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="111" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="113" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\actions\TextPuzzleActions.java">
 <error line="12" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="12" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
 <error line="13" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="15" column="61" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="39" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="43" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="44" column="61" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="45" column="87" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="47" column="76" severity="error" message="Comment has incorrect indentation level 75, expected is 12, indentation should be the same level as line 49." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="54" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="68" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="82" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="102" column="49" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="104" column="48" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="119" column="49" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="121" column="48" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="127" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="132" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="135" column="79" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="137" column="101" severity="error" message="Comment has incorrect indentation level 100, expected is 16, indentation should be the same level as line 138." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="147" column="107" severity="error" message="Comment has incorrect indentation level 106, expected is 16, indentation should be the same level as line 148." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="153" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="156" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="22" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="42" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="46" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="47" column="61" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="48" column="87" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="50" column="76" severity="error" message="Comment has incorrect indentation level 75, expected is 12, indentation should be the same level as line 52." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="57" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="71" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="85" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="105" column="49" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="107" column="48" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="122" column="49" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="124" column="48" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="130" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="135" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="138" column="79" severity="error" message="&apos;&amp;&amp;&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="140" column="101" severity="error" message="Comment has incorrect indentation level 100, expected is 16, indentation should be the same level as line 141." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="150" column="107" severity="error" message="Comment has incorrect indentation level 106, expected is 16, indentation should be the same level as line 151." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="156" column="15" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="159" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\actions\VisualPuzzleActions.java">
 <error line="8" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -316,7 +317,7 @@
 <error line="8" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="8" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
 <error line="15" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="22" column="5" severity="error" message="Method length is 202 lines (max allowed is 150)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
+<error line="22" column="5" severity="error" message="Method length is 201 lines (max allowed is 150)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
 <error line="22" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="81" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="98" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
@@ -337,12 +338,12 @@
 <error line="183" column="25" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
 <error line="192" column="27" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="194" column="23" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="207" column="21" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="207" column="41" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="213" column="13" severity="error" message="Fall through from previous branch of the switch statement." source="com.puppycrawl.tools.checkstyle.checks.coding.FallThroughCheck"/>
-<error line="217" column="24" severity="error" message="Literal Strings should be compared using equals(), not &apos;!=&apos;." source="com.puppycrawl.tools.checkstyle.checks.coding.StringLiteralEqualityCheck"/>
-<error line="231" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="233" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="206" column="21" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="206" column="41" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="212" column="13" severity="error" message="Fall through from previous branch of the switch statement." source="com.puppycrawl.tools.checkstyle.checks.coding.FallThroughCheck"/>
+<error line="216" column="24" severity="error" message="Literal Strings should be compared using equals(), not &apos;!=&apos;." source="com.puppycrawl.tools.checkstyle.checks.coding.StringLiteralEqualityCheck"/>
+<error line="230" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="232" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\operations\inputoutput\Printer.java">
 <error line="8" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -2959,88 +2960,84 @@
 <error line="32" column="17" severity="error" message="Variable &apos;curseCounter&apos; explicitly initialized to &apos;0&apos; (default value for its type)." source="com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"/>
 <error line="34" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="49" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="51" column="30" severity="error" message="&apos;;&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="76" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="90" column="27" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="96" column="13" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="98" column="13" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="103" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="104" column="33" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="107" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="108" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="108" column="41" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="109" column="48" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="122" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="122" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="125" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="126" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="127" column="85" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="130" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="135" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="136" column="85" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="139" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="146" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="147" column="79" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="150" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="156" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="158" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="158" column="43" severity="error" message="&apos;0.33&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="159" column="83" severity="error" message="&apos;20&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="161" column="50" severity="error" message="&apos;0.66&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="167" column="53" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="170" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="170" column="45" severity="error" message="&apos;0.25&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="171" column="89" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="176" column="25" severity="error" message="Nested if-else depth is 4 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
-<error line="186" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="191" column="9" severity="error" message="switch without &quot;default&quot; clause." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
-<error line="193" column="67" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="197" column="69" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="200" column="18" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="202" column="41" severity="error" message="&apos;0.3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="205" column="39" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="209" column="18" severity="error" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="213" column="18" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="217" column="18" severity="error" message="&apos;6&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="218" column="37" severity="error" message="&apos;0.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="221" column="43" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="224" column="18" severity="error" message="&apos;7&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="225" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="225" column="51" severity="error" message="&apos;50&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="226" column="46" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="227" column="17" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="228" column="75" severity="error" message="&apos;50&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="232" column="18" severity="error" message="&apos;8&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="233" column="67" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="234" column="69" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="238" column="18" severity="error" message="&apos;9&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="242" column="18" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="243" column="34" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="251" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="260" column="13" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="263" column="18" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="266" column="18" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="271" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
-<error line="272" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="279" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="280" column="22" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
-<error line="281" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="87" column="23" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="94" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="95" column="25" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="96" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="102" column="29" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="106" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="106" column="37" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="107" column="44" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="116" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="117" column="31" severity="error" message="&apos;0.80&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="120" column="21" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="120" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="126" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="126" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="130" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="131" column="81" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="134" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="139" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="140" column="81" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="143" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="150" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="151" column="75" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="154" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="160" column="17" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="162" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="162" column="39" severity="error" message="&apos;0.33&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="163" column="79" severity="error" message="&apos;20&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="165" column="46" severity="error" message="&apos;0.66&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="171" column="49" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="174" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="174" column="41" severity="error" message="&apos;0.25&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="175" column="85" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="180" column="21" severity="error" message="Nested if-else depth is 3 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="189" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="194" column="9" severity="error" message="switch without &quot;default&quot; clause." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="196" column="67" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="200" column="69" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="203" column="18" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="205" column="41" severity="error" message="&apos;0.3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="208" column="39" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="212" column="18" severity="error" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="216" column="18" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="220" column="18" severity="error" message="&apos;6&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="222" column="41" severity="error" message="&apos;0.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="225" column="47" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="229" column="18" severity="error" message="&apos;7&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="230" column="17" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="230" column="51" severity="error" message="&apos;50&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="231" column="46" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="232" column="17" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="233" column="75" severity="error" message="&apos;50&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="237" column="18" severity="error" message="&apos;8&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="238" column="67" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="239" column="69" severity="error" message="&apos;1.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="243" column="18" severity="error" message="&apos;9&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="247" column="18" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="248" column="34" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="256" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="265" column="13" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="268" column="18" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="271" column="18" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="276" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="277" column="11" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="284" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="285" column="23" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="286" column="14" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="287" column="23" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="285" column="22" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="286" column="9" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="289" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="290" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
-<error line="292" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
-<error line="292" column="57" severity="error" message="&apos;0.2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="297" column="23" severity="error" message="&apos;20&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="300" column="29" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="305" column="33" severity="error" message="&apos;0.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="312" column="24" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="314" column="85" severity="error" message="&apos;;&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="314" column="86" severity="error" message="&apos;}&apos; at column 86 should have line break before." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
-<error line="314" column="86" severity="error" message="&apos;}&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="317" column="88" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="290" column="23" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="291" column="14" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="292" column="23" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="294" column="9" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="295" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="297" column="20" severity="error" message="Unnecessary parentheses around assignment right-hand side." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
+<error line="297" column="57" severity="error" message="&apos;0.2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="302" column="23" severity="error" message="&apos;20&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="305" column="29" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="310" column="33" severity="error" message="&apos;0.1&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="324" column="88" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\resources\GameMap.java">
 <error line="9" column="1" severity="error" message="Extra separation in import group before &apos;com.mapproject.operations.runHandler.MapBuilder&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
@@ -3059,9 +3056,9 @@
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\resources\items\Item.java">
 <error line="3" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="12" column="21" severity="error" message="Variable &apos;used&apos; explicitly initialized to &apos;false&apos; (default value for its type)." source="com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"/>
-<error line="20" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="92" column="5" severity="error" message="Definition of &apos;equals()&apos; without corresponding definition of &apos;hashCode()&apos;." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheck"/>
+<error line="11" column="21" severity="error" message="Variable &apos;used&apos; explicitly initialized to &apos;false&apos; (default value for its type)." source="com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"/>
+<error line="19" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="91" column="5" severity="error" message="Definition of &apos;equals()&apos; without corresponding definition of &apos;hashCode()&apos;." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheck"/>
 </file>
 <file name="C:\Users\gmrut\OneDrive\Documenti\GitHub\thetrialgame\src\main\java\com\mapproject\resources\items\Weapon.java">
 <error line="3" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
