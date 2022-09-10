@@ -57,8 +57,7 @@ public class FightActions {
                     System.out.println("Il nemico è sconfitto!");
                     gameSession.addBeatenEnemy();
 
-                    // TODO +5 hp
-                    gameSession.setHealthPoints(gameSession.getMaxHealthPoints());
+                    gameSession.setHealthPoints(gameSession.getHealthPoints() + 5);
                     System.out.println("Guadagni 5 punti vita!");
 
                     gameSession.getInventory().stream().filter(item -> item.isUsed()).forEach(item -> {

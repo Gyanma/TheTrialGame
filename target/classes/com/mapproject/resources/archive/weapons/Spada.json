@@ -2,7 +2,7 @@
     "damage": 20,
     "manualDescription": "Un'arma corpo a corpo. Peso medio, danno medio e precisione media.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 2,
     "name": "Spada",
     "nameWithDetArticle": "la spada",

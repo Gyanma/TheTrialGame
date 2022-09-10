@@ -2,7 +2,7 @@
     "damage": 30,
     "manualDescription": "Un'arma a distanza. Danni alti, precisione media, ma peso alto",
     "findable": true,
-    "throwable": true,
+    
     "usage": 1,
     "name": "Balestra",
     "nameWithDetArticle": "la balestra",

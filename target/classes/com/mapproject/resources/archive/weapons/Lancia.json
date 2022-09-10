@@ -2,7 +2,7 @@
     "damage": 30,
     "manualDescription": "Un'arma a distanza. Peso alto, danno alto e precisione bassa.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 1,
     "name": "Lancia",
     "nameWithDetArticle": "la lancia",

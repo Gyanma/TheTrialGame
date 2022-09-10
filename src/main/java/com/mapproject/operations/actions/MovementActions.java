@@ -7,60 +7,68 @@ import com.mapproject.resources.Session;
 public class MovementActions {
 
     
-    protected static void moveToWest(Session gameSession) {
+    protected static boolean moveToWest(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             int currentRoomId = gameSession.getCurrentRoomId();
             if (gameSession.getCurrentMap().getRoom(currentRoomId).getWest() != null) {
                 gameSession.setCurrentRoomId(
                         gameSession.getCurrentMap().getRoom(currentRoomId).getWest().getId());
                 System.out.println("Ti sposti verso la stanza a ovest.");
+                return true;
             } else {
                 System.out.println("Non ci sono stanze a ovest!");
             }
         } else
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+        return false;
     }
 
-    protected static void moveToEast(Session gameSession) {
+    protected static boolean moveToEast(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             int currentRoomId = gameSession.getCurrentRoomId();
             if (gameSession.getCurrentMap().getRoom(currentRoomId).getEast() != null) {
                 gameSession.setCurrentRoomId(
                         gameSession.getCurrentMap().getRoom(currentRoomId).getEast().getId());
                 System.out.println("Ti sposti verso la stanza a est.");
+                return true;
             } else {
                 System.out.println("Non ci sono stanze a est!");
             }
         } else
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+        return false;
     }
 
-    protected static void moveToSouth(Session gameSession) {
+    protected static boolean moveToSouth(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             int currentRoomId = gameSession.getCurrentRoomId();
             if (gameSession.getCurrentMap().getRoom(currentRoomId).getSouth() != null) {
                 gameSession.setCurrentRoomId(
                         gameSession.getCurrentMap().getRoom(currentRoomId).getSouth().getId());
                 System.out.println("Ti sposti verso la stanza a sud.");
+                return true;
             } else {
                 System.out.println("Non ci sono stanze a sud!");
             }
         } else
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+        return false;
     }
 
-    protected static void moveToNorth(Session gameSession) {
+    protected static boolean moveToNorth(Session gameSession) {
         if (gameSession.getCurrentStatus() == Status.EXPLORING) {
             int currentRoomId = gameSession.getCurrentRoomId();
             if (gameSession.getCurrentMap().getRoom(currentRoomId).getNorth() != null) {
                 gameSession.setCurrentRoomId(
                         gameSession.getCurrentMap().getRoom(currentRoomId).getNorth().getId());
                 System.out.println("Ti sposti verso la stanza a nord.");
+                return true;
             } else {
                 System.out.println("Non ci sono stanze a nord!");
             }
         } else
             System.out.println("C'è un momento e un luogo per ogni cosa, ma non ora.");
+        return false;
 
     }
 

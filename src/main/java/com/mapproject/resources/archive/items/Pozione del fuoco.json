@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una pozione del fuoco",
     "description": "Una pozione ottenuta nel labirinto. Genera all\u0027istante una fiammata. Utilizzare con cautela.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Puoi usarla su un nemico, infliggergli danni e ridurne l'attacco per un turno."
 }

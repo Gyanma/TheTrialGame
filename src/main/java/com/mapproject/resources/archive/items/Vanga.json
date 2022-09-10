@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una vanga",
     "description": "Una vanga trovata nel labirinto. L\u0027attrezzo fondamentale di un esploratore preparato.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Fino a 5 volte, puoi cercare oggetti sepolti nelle stanze."
 }

@@ -104,7 +104,7 @@ Per ogni comando sono previsti una serie di comandi alternativi di significato s
 -	Utilizzare un item
     	
         Usa la vanga
-    	Utilizza l’affilatore sulla spada
+    	Utilizza l’affilatore
 
 -	Esaminare un item nell’inventario
     
@@ -126,7 +126,7 @@ Si aggiunge il comando unico "Chiudi il gioco" che permette di chiudere l'applic
 
     -	Avventuriero: 421
     -	Pirati: 9
-    -	Goblin: Quadri. Jolly, Cuori, Fiori, Picche
+    -	Goblin: Quadri, Jolly, Cuori, Fiori, Picche
     -	Orco: 4
     -	Centauri: Terzogenito
     -	Nani: 4

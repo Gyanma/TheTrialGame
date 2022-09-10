@@ -206,7 +206,7 @@ public class Parser {
                     if (firstNoun.equals("fail"))
                         return "fail";
                     newCommand = clearCommand(newCommand, firstNoun);
-
+                    break;
                 }
 
             default:

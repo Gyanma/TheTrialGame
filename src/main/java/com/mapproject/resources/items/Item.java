@@ -7,7 +7,6 @@ public class Item {
     private String nameWithDetArticle;
     private String nameWithIndetArticle;
     private String description;
-
     private boolean findable;
     private boolean used = false;
 

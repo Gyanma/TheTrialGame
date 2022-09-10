@@ -2,7 +2,7 @@
     "damage": 20,
     "manualDescription": "Un'arma a distanza. Danni intermedi, peso basso e precisione alta.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 1,
     "name": "Shuriken",
     "nameWithDetArticle": "gli shuriken",

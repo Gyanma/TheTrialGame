@@ -24,11 +24,12 @@ public class Interpreter {
     public static int operate(String command, Session gameSession) {
 
         if (gameSession.getItemHeldInCommand() != null) {
-            if (gameSession.getCurrentStatus() == Status.DONATING_ITEM)
+            if (gameSession.getCurrentStatus() == Status.DONATING_ITEM){
                 PacificEncounterActions.donateItem(gameSession, command);
-            else if (gameSession.isUsingItem())
+            }
+            else if (gameSession.isUsingItem()){
                 InventoryHandler.useItem(gameSession, command);
-
+            }
             return 1;
 
         }
@@ -58,17 +59,17 @@ public class Interpreter {
                     command = command.trim();
                     boolean moved = false;
                     if (command.equals("nord")) {
-                        MovementActions.moveToNorth(gameSession);
-                        moved = true;
+                        moved = MovementActions.moveToNorth(gameSession);
+                        
                     } else if (command.equals("sud")) {
-                        MovementActions.moveToSouth(gameSession);
-                        moved = true;
+                        moved = MovementActions.moveToSouth(gameSession);
+                        
                     } else if (command.equals("ovest")) {
-                        MovementActions.moveToWest(gameSession);
-                        moved = true;
+                        moved = MovementActions.moveToWest(gameSession);
+                        
                     } else if (command.equals("est")) {
-                        MovementActions.moveToEast(gameSession);
-                        moved = true;
+                        moved = MovementActions.moveToEast(gameSession);
+                        
                     } else
                         return 2;
 

@@ -2,7 +2,7 @@
     "damage": 10,
     "manualDescription": "Un'arma a distanza. Danno basso, ma peso basso e precisione alta.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 1,
     "name": "Fionda",
     "nameWithDetArticle": "la fionda",

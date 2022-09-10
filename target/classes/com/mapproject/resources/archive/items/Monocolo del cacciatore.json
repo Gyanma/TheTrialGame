@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "un monocolo del cacciatore",
     "description": "Uno strano monocolo trovato nel labirinto. Una volta indossato, senti i tuoi sensi acuirsi.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Una volta indossato, la tua accuratezza aumenta leggermente per tutta la prova. "
 }

@@ -3,9 +3,9 @@
     "eventId": 2502,
     "itemNotGivenResponse": "\"Oh, peccato... Alla prossima!\"_L'esploratore torna a guardare le sue mappe.",
     "name": "Esploratore",
-    "description": "Ti avvicini all'esploratore'._Quando sei abbastanza vicino, si gira e inizia a parlarti._\"Salve, amico. Anche tu cerchi l'uscita del labirinto?_Allora posso darti una mano._Sono riuscito a trovare una mappa magica!_Permette di trovare immediatamente la stanza finale del labirinto e la tua posizione corrente._A me non serve, ho memorizzato gi\u00e0 tutte le stanze._Ma speravo di trovare qualche tesoro... Se tu hai qualche pietra preziosa_potremmo fare a cambio, che ne dici?\"",
+    "description": "Ti avvicini all'esploratore._Quando sei abbastanza vicino, si gira e inizia a parlarti._\"Salve, amico. Anche tu cerchi l'uscita del labirinto?_Allora posso darti una mano._Sono riuscito a trovare una mappa magica!_Permette di trovare immediatamente la stanza finale del labirinto e la tua posizione corrente._A me non serve, ho memorizzato gi\u00e0 tutte le stanze._Ma speravo di trovare qualche tesoro... Se tu hai qualche pietra preziosa_potremmo fare a cambio, che ne dici?\"",
     "giftedItemId": [
-        1027
+        1028
     ],
     "isSkippable": true,
     "requestedItemId": [

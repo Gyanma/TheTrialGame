@@ -17,7 +17,6 @@ public class InventoryHandler {
     private static List<String> temporaryItems = new ArrayList<String>();
 
     public static void useItem(Session gameSession, String command) {
-        boolean itemFound = false;
         Item chosenItem = null;
         Weapon chosenWeapon = null;
 
@@ -27,24 +26,21 @@ public class InventoryHandler {
         List<String> combinedUseItems = Loader.loadList("combinedUseItems");
         List<String> tomeTypeItems = Loader.loadList("tomeTypeItems");
 
-        if (combinedUseItems.contains(command)) {
-            if (gameSession.getItemHeldInCommand() == null) {
+        if (gameSession.getItemHeldInCommand() == null) {
+            if (combinedUseItems.contains(command)) {
                 gameSession.setItemHeldInCommand(command);
-                System.out.println("Dimmi l'oggetto sul quale vuoi usarlo.");
+                gameSession.setUsingItem(true);
+                System.out.println("Dimmi l'oggetto sul quale vorresti usarlo.");
                 return;
-            } else {
-                firstItem = gameSession.getItemHeldInCommand();
-                gameSession.setItemHeldInCommand(null);
-            }
-        } else if (tomeTypeItems.contains(command)) {
-            if (gameSession.getItemHeldInCommand() == null) {
+            } else if (tomeTypeItems.contains(command)){
                 gameSession.setItemHeldInCommand(command);
+                gameSession.setUsingItem(true);
                 System.out.println("Cosa vuoi cercare?");
                 return;
-            } else {
-                firstItem = gameSession.getItemHeldInCommand();
-                gameSession.setItemHeldInCommand(null);
             }
+        } else {
+            firstItem = gameSession.getItemHeldInCommand();
+            gameSession.setItemHeldInCommand(null);
         }
 
         if (!firstItem.equals("")) {
@@ -68,8 +64,9 @@ public class InventoryHandler {
                             System.out.println(
                                     "Non puoi usare la punta in titanio su " + chosenWeapon.getNameWithDetArticle()
                                             + ".");
-                    } else
+                    } else {
                         System.out.println("Non capisco di che oggetto parli.");
+                    }
 
                     gameSession.setItemHeldInCommand(null);
                     gameSession.setUsingItem(false);
@@ -125,6 +122,9 @@ public class InventoryHandler {
                     gameSession.setItemHeldInCommand(null);
                     gameSession.setUsingItem(false);
                     return;
+                default:
+                    gameSession.setItemHeldInCommand(null);
+                    gameSession.setUsingItem(false);
 
             }
         }
@@ -345,10 +345,8 @@ public class InventoryHandler {
 
             }
 
-        }
-        if (!itemFound) {
+        } else
             System.out.println("Non capisco di che oggetto parli...");
-        }
 
     }
 
@@ -368,19 +366,16 @@ public class InventoryHandler {
 
     public static void throwItem(Session gameSession, String command) {
 
-        if (gameSession.getInventory().stream().
-        filter(item -> command.equals(item.getName())).
-        findAny().orElse(null) != null)
+        if (gameSession.getInventory().stream().filter(item -> command.equals(item.getName())).findAny()
+                .orElse(null) != null)
 
-            gameSession.getInventory().stream().
-            filter(item -> command.equals(item.getName())).
-            forEach(item -> {
+            gameSession.getInventory().stream().filter(item -> command.equals(item.getName())).forEach(item -> {
                 gameSession.removeItemFromInventory(item);
                 if (!item.isUsed())
                     gameSession.getCurrentRoom().addItem(item);
                 System.out.println("Hai gettato " + item.getNameWithDetArticle() + "!");
             });
-            
+
         else
             System.out.println("Non ho capito di che oggetto parli.");
 
@@ -398,6 +393,10 @@ public class InventoryHandler {
                     "Senti un soffio caldo provenire da dietro di te... è il Dio Sole che ti fa un dono!");
             EventHandler.selectBlessing(gameSession);
         } else
+            if (item.getName().equals("Mappa Mistica") && 
+            gameSession.getInventory().contains(Loader.loadItem("Mappa"))){
+                gameSession.removeItemFromInventory(Loader.loadItem("Mappa"));
+            }
             gameSession.addItemToInventory(item);
     }
 }

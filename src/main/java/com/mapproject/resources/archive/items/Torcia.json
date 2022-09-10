@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una torcia",
     "description": "Una torcia trovata nel labirinto. C\u0027\u00e8 anche un acciarino; ora il buio non \u00e8 pi\u00f9 un problema.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Permette di illuminare stanze buie o essere donate."
 }

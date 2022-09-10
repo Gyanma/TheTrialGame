@@ -49,7 +49,9 @@
     ],
     "Mappa": [
         "la mappa",
-        "una mappa",
+        "una mappa"
+    ],
+    "Mappa mistica" : [
         "la mappa mistica",
         "una mappa mistica"
     ],
@@ -313,9 +315,9 @@
         "la melma",
         "una melma"
     ],
-    "Figura": [
-        "la figura",
-        "una figura"
+    "Libreria": [
+        "la libreria",
+        "una libreria"
     ],
     "Esploratore": [
         "l\u0027esploratore",
@@ -327,7 +329,9 @@
     ],
     "Banchetto": [
         "il banchetto",
-        "un banchetto"
+        "un banchetto",
+        "la figura",
+        "una figura"
     ],
     "Vecchio": [
         "il vecchio",

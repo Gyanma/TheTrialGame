@@ -5,6 +5,6 @@
     "nameWithIndetArticle": "un bestiario",
     "description": "Un tomo ottenuto nel labirinto. Ti dar\u00e0 ogni informazione necessaria su qualsiasi mostro che potresti trovare.",
     "findable": true,
-    "throwable": true,
+    
     "used": false
 }

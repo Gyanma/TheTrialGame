@@ -2,7 +2,7 @@
     "damage": 30,
     "manualDescription": "Un'arma corpo a corpo. Danni e peso alti, con una precisione media.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 2,
     "name": "Maglio",
     "nameWithDetArticle": "il maglio",

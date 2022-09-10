@@ -5,6 +5,5 @@
     "nameWithIndetArticle": "una mappa mistica",
     "description": "Una mappa magica ottenuta nel labirinto. Su di essa appare magicamente la tua posizione e l\u0027uscita dal labirinto.",
     "findable": false,
-    "throwable": false,
     "used": false
 }

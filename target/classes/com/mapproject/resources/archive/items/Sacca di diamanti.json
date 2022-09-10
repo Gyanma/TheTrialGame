@@ -5,6 +5,6 @@
     "nameWithIndetArticle": "una sacca di diamanti",
     "description": "Una sacca di diamanti ottenuta nel labirinto. Oggetti preziosi e da un grande valore.",
     "findable": true,
-    "throwable": true,
+    
     "used": false
 }

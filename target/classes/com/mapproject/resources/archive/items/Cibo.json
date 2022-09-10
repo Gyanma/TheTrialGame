@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "del cibo",
     "description": "Un tozzo di pane trovato nel labirinto. Di norma non sapresti cosa farne, ma chiss\u00e0 cosa ti aspetta nel labirinto.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Il cibo può attirare animali."
 }

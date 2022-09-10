@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una pozione del veleno",
     "description": "Una pozione ottenuta nel labirinto. Genera all\u0027istante una nuvola tossica. Utilizzare con cautela.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Puoi usarla su un nemico e avvelenarlo, per infliggergli danni lievi per 5 turni."
 }
