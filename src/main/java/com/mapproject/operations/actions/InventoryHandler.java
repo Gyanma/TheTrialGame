@@ -30,7 +30,7 @@ public class InventoryHandler {
             if (combinedUseItems.contains(command)) {
                 gameSession.setItemHeldInCommand(command);
                 gameSession.setUsingItem(true);
-                System.out.println("Dimmi su quale oggetto vorresti usarlo");
+                System.out.println("Dimmi l'oggetto sul quale vorresti usarlo.");
                 return;
             } else if (tomeTypeItems.contains(command)){
                 gameSession.setItemHeldInCommand(command);
@@ -393,10 +393,10 @@ public class InventoryHandler {
                     "Senti un soffio caldo provenire da dietro di te... è il Dio Sole che ti fa un dono!");
             EventHandler.selectBlessing(gameSession);
         } else
-            gameSession.addItemToInventory(item);
             if (item.getName().equals("Mappa Mistica") && 
             gameSession.getInventory().contains(Loader.loadItem("Mappa"))){
                 gameSession.removeItemFromInventory(Loader.loadItem("Mappa"));
             }
+            gameSession.addItemToInventory(item);
     }
 }

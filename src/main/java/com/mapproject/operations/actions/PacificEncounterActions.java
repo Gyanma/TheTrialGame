@@ -80,7 +80,8 @@ public class PacificEncounterActions {
                     itemRequestedByPlayer = Loader.loadWeapon(command);
                 }
 
-                if (!encounter.getRequestedItemId().contains(-2)) {
+                if (!encounter.getRequestedItemId().contains(-2)) {// if the encounter
+                                                                   // accepts any item
                     if (!encounter.getRequestedItemId().contains(itemGivenByPlayer.getId())) {
                         System.out.println("Non sembra volere l'item che hai offerto.");
                         gameSession.setItemHeldInCommand(null);

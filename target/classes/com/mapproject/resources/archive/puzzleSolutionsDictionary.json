@@ -1,56 +1,81 @@
 {
     "421": [
         "Prendi 421 perle",
+        "prendi 421 perle",
         "421 perle",
         "421",
-        "Prendine 421"
+        "Prendine 421",
+        "prendine 421"
     ],
     "9": [
         "Hanno rubato 9 diamanti",
+        "hanno rubato 9 diamanti",
         "I pirati hanno rubato 9 diamanti",
+        "i pirati hanno rubato 9 diamanti",
         "9 diamanti",
         "9",
-        "Sono stati rubati 9 diamanti"
+        "Sono stati rubati 9 diamanti",
+        "sono stati rubati 9 diamanti"
     ],
     "Quadri, Jolly, Cuori, Fiori, Picche": [
         "La sequenza \u00e8: Quadri, Jolly, Cuori, Fiori, Picche",
+        "la sequenza \u00e8: Quadri, Jolly, Cuori, Fiori, Picche",
         "Quadri, Jolly, Cuori, Fiori, Picche",
+        "quadri, jolly, cuori, fiori, picche",
         "La sequenza \u00e8: Quadri-Jolly-Cuori-Fiori-Picche",
+        "la sequenza \u00e8: Quadri-Jolly-Cuori-Fiori-Picche",
         "Quadri-Jolly-Cuori-Fiori-Picche",
+        "quadri-jolly-cuori-fiori-picche",
         "La sequenza \u00e8: Asso di Quadri, Jolly, Asso di Cuori, Asso di Fiori, Asso di Picche",
+        "la sequenza \u00e8: Asso di Quadri, Jolly, Asso di Cuori, Asso di Fiori, Asso di Picche",
         "Asso di Quadri, Jolly, Asso di Cuori, Asso di Fiori, Asso di Picche",
+        "asso di quadri, jolly, asso di cuori, asso di fiori, asso di picche",
         "La sequenza \u00e8: Asso di Quadri-Jolly-Asso di Cuori-Asso di Fiori-Asso di Picche",
-        "Asso di Quadri-Jolly-Asso di Cuori-Asso di Fiori-Asso di Picche"
+        "la sequenza \u00e8: Asso di Quadri-Jolly-Asso di Cuori-Asso di Fiori-Asso di Picche",
+        "Asso di Quadri-Jolly-Asso di Cuori-Asso di Fiori-Asso di Picche",
+        "asso di quadri-jolly-asso di cuori-asso di fiori-asso di picche"
+        
     ],
     "4": [
         "4",
         "4 mattoni",
         "4 giorni",
         "Per 4 giorni",
+        "per 4 giorni",
         "4 di loro"
     ],
     "Terzogenito": [
         "Terzogenito",
+        "terzogenito",
         "Il terzogenito",
-        "Quella del terzogenito"
+        "il terzogenito",
+        "Quella del terzogenito",
+        "quella del terzogenito"
     ],
-    "forziere di ferro": [
+    "Forziere di ferro": [
         "Forziere di ferro",
-        "Nel forziere di ferro"
+        "forziere di ferro",
+        "Nel forziere di ferro",
+        "nel forziere di ferro"
     ],
     "Il cavaliere": [
-        "Il cavaliere"
+        "Il cavaliere",
+        "il cavaliere"
     ],
     "12": [
         "12",
         "12 scatole",
-        "Riuscirei a trasportare 12 scatole"
+        "Riuscirei a trasportare 12 scatole",
+        "riuscirei a trasportare 12 scatole"
     ],
     "26": [
         "26",
         "26 monete",
         "Spettano 26 monete",
+        "spettano 26 monete",
         "Gli spettano 26 monete",
-        "Ti spettano 26 monete"
+        "gli spettano 26 monete",
+        "Ti spettano 26 monete",
+        "ti spettano 26 monete"
     ]
 }

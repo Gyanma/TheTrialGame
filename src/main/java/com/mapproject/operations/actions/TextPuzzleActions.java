@@ -19,6 +19,9 @@ public class TextPuzzleActions {
             if (textPuzzle.getAnswer().equals(command)) {
                 Printer.printFromString(textPuzzle.getCorrectReply());
                 Item reward = Loader.loadItem(textPuzzle.getRewardId());
+                if (reward == null) {
+                    reward = Loader.loadWeapon(textPuzzle.getRewardId());
+                }
 
                 InventoryHandler.addItem(gameSession, reward);
 

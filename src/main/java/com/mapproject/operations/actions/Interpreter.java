@@ -23,8 +23,6 @@ public class Interpreter {
      */
     public static int operate(String command, Session gameSession) {
 
-        System.out.println("Comando: " + command);
-
         if (gameSession.getItemHeldInCommand() != null) {
             if (gameSession.getCurrentStatus() == Status.DONATING_ITEM){
                 PacificEncounterActions.donateItem(gameSession, command);
@@ -76,7 +74,6 @@ public class Interpreter {
                         return 2;
 
                     if (moved) {
-                        System.out.println("Ti trovi nella stanza " + gameSession.getCurrentRoom().getId());
                         if (gameSession.getCurrentRoom().getEvent() != null &&
                                 gameSession.getCurrentRoom().getEvent().getClass() == Danger.class) {
                             // if the player reaches a danger event
