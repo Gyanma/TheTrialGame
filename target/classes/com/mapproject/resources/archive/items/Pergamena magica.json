@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una pergamena magica",
     "description": "La pergamena con cui hai cominciato la tua avventura. Utile per quando hai bisogno di sapere davvero come stai.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Se usata, permette di conoscere i propri punti vita e i propri status."
 }

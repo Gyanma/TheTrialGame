@@ -2,7 +2,7 @@
     "damage": 20,
     "manualDescription": "Un'arma a distanza. Peso medio, danno medio e precisione media.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 1,
     "name": "Arco",
     "nameWithDetArticle": "l'arco",

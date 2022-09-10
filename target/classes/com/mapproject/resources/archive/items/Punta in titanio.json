@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una punta in titanio",
     "description": "Una punta trovata nel labirinto. Se il tuo obietivo \u00e8 trafiggere, non puoi sbagliarti.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Se usato su un\u0027arma a distanza, il suo danno aumenta leggermente per il resto della prova."
 }

@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "un acchiappasogni",
     "description": "Un acchiappasogni trovato nel labirinto. I mostri sembrano volerne stare alla larga il pi\u00f9 possibile.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Una volta usato, i nemici ti ignoreranno per il resto della mappa."
 }

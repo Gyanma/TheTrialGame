@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "delle pitture di guerra",
     "description": "Un set di pittura da guerra trovato nel labirinto. Quando applicate, infondono una forza mai vista.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Una volta utilizzato, la tua forza d\u0027attacco aumenta leggermente per tutta la prova."
 }

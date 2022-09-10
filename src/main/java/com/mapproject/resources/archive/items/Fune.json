@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una fune",
     "description": "Una fune trovata nel labirinto. Ora manca solo il fedora.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Puoi usarla per fuggire da buche o trappole."
 }

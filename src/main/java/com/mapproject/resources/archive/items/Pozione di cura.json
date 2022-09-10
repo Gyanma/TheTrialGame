@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una pozione di cura",
     "description": "Una pozione ottenuta nel labirinto. Utile in caso ti senta a secco.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Riporta i tuoi HP al massimo."
 }

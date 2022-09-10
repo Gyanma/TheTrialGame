@@ -5,7 +5,7 @@
     "nameWithIndetArticle": "una pozione del gelo",
     "description": "Una pozione ottenuta nel labirinto. Genera all\u0027istante una tormenta. Utilizzare con cautela.",
     "findable": true,
-    "throwable": true,
+    
     "used": false,
     "manualDescription": "Puoi usarla su un nemico, infiggergli danni e ridurne l'accuratezza per un turno."
 }

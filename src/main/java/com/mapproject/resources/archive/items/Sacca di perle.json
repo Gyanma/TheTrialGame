@@ -5,6 +5,6 @@
     "nameWithIndetArticle": "una sacca di perle",
     "description": "Una sacca di perle ottenuta nel labirinto. Sono molto ricercate da collezionisti di tutto il mondo.",
     "findable": true,
-    "throwable": true,
+    
     "used": false
 }

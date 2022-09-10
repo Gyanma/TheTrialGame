@@ -2,7 +2,7 @@
     "damage": 30,
     "manualDescription": "Un'arma corpo a corpo. Peso alto, danno alto e precisione bassa.",
     "findable": true,
-    "throwable": true,
+    
     "usage": 2,
     "name": "Ascia",
     "nameWithDetArticle": "l'ascia",

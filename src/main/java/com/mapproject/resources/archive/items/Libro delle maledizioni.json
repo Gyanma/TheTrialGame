@@ -5,6 +5,6 @@
     "nameWithIndetArticle": "un libro delle maledizioni",
     "description": "Un antico volume trovato nel labirinto. Contiene maledizioni molto potenti; in pochi hanno saputo domarle.",
     "findable": true,
-    "throwable": true,
+    
     "used": false
 }
